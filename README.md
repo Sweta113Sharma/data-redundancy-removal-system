@@ -1,14 +1,14 @@
-# 🛡️ Database Guard Dog & 🔎 Double-Finder Scanner
+# Database Guard Dog & Double-Finder Scanner
 
 > **An interactive dual-purpose security sandbox** that brings two powerful concepts to life: **defense-in-depth SQL injection protection** and **intelligent fuzzy-matching data deduplication**. Built with React + Node.js, this is an educational showcase of enterprise-grade security patterns and algorithmic data cleaning.
 
 ---
 
-## 🎯 What This Does
+## What This Does
 
 This application is split into two primary interactive modules:
 
-### 1. 🐶 **Database Guard Dog** (SQL Injection Shield)
+### 1.**Database Guard Dog** (SQL Injection Shield)
 Protects a SQLite database containing sensitive customer information using two toggleable security layers:
 
 - **Level 1: Good Command Inspector (HMAC-SHA256 Capability Tokens)**  
@@ -20,7 +20,7 @@ Protects a SQLite database containing sensitive customer information using two t
 - **Programmer Mode**  
   Toggle a checkbox to inspect the underlying SQL, parameters, digital tokens, and security layer status in real-time.
 
-### 2. 🔎 **Double-Finder Scanner** (Data Deduplication)
+### 2.**Double-Finder Scanner** (Data Deduplication)
 An ingestion pipeline that screens new contact entries against existing database records to prevent duplicate clutter:
 
 - **Normalizer**  
@@ -36,7 +36,7 @@ An ingestion pipeline that screens new contact entries against existing database
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Component | Tech |
 |-----------|------|
@@ -46,13 +46,13 @@ An ingestion pipeline that screens new contact entries against existing database
 | **Algorithms** | Levenshtein Distance, fuzzy string matching |
 
 **Language Composition:**
-- JavaScript: 90.1% 📜
-- CSS: 9.6% 🎨
-- HTML: 0.3% 📄
+- JavaScript: 90.1% 
+- CSS: 9.6% 
+- HTML: 0.3% 
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 backend/
@@ -77,7 +77,7 @@ README.md (this file)
 .gitignore
 ```
 
-### 🔄 How It Fits Together
+### How It Fits Together
 
 **Request Flow (SQL Execution):**
 1. Frontend sends query + capability code to `/api/execute`
@@ -96,7 +96,7 @@ README.md (this file)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) v16.0.0 or higher
@@ -122,7 +122,7 @@ cd ../frontend
 npm install
 ```
 
-### ⚡ Running the Application
+### Running the Application
 
 **Start the Backend API** (from `backend/` directory):
 ```bash
@@ -165,7 +165,7 @@ If an attacker executes a rogue query when Layer 1 is disabled, they retrieve on
 
 ---
 
-## 🔍 Deduplication Algorithm
+## Deduplication Algorithm
 
 ### Normalization
 - **Email**: lowercase, trim whitespace
@@ -197,7 +197,7 @@ Quarantined records are stored in a separate table and can be manually reviewed 
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Security & Execution
 
@@ -223,24 +223,24 @@ Quarantined records are stored in a separate table and can be manually reviewed 
 
 ---
 
-## 🎮 Interactive Features
+## Interactive Features
 
 ### Security Module
-- ✅ **Toggle Layer 1**: Watch queries get blocked or unprotected as you disable signature validation
-- ✅ **Toggle Layer 2**: See encrypted ciphertext vs. decrypted plaintext
-- ✅ **Programmer Mode**: Inspect tokens, query templates, and digital signatures in real-time
-- ✅ **Live Threat Logs**: See SQL injection attempts and security events as they happen
-- ✅ **Try Injections**: Safely test SQL injection payloads when Layer 1 is off—watch the IDS detect them
+- **Toggle Layer 1**: Watch queries get blocked or unprotected as you disable signature validation
+- **Toggle Layer 2**: See encrypted ciphertext vs. decrypted plaintext
+- **Programmer Mode**: Inspect tokens, query templates, and digital signatures in real-time
+- **Live Threat Logs**: See SQL injection attempts and security events as they happen
+- **Try Injections**: Safely test SQL injection payloads when Layer 1 is off—watch the IDS detect them
 
 ### Deduplication Module
-- ✅ **Add Contacts**: Ingest new records and watch the engine classify them
-- ✅ **Quarantine Review**: View side-by-side comparisons with character-level diff highlighting
-- ✅ **Manual Merge**: Combine quarantined records with existing contacts
-- ✅ **Similarity Scoring**: See the numeric breakdown of why records matched
+- **Add Contacts**: Ingest new records and watch the engine classify them
+- **Quarantine Review**: View side-by-side comparisons with character-level diff highlighting
+- **Manual Merge**: Combine quarantined records with existing contacts
+- **Similarity Scoring**: See the numeric breakdown of why records matched
 
 ---
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates:
 
@@ -267,7 +267,7 @@ This project demonstrates:
 
 ---
 
-## 🧪 Experiment Ideas
+## Experiment Ideas
 
 - **Stress Test Dedup**: Add 1,000+ similar names (e.g., variations of "John Smith"). How does the algorithm scale?
 - **Encryption Edge Cases**: Try special characters, emoji, or NULL values in encrypted fields. Does decryption handle them?
@@ -277,7 +277,7 @@ This project demonstrates:
 
 ---
 
-## 📝 Project Context
+## Project Context
 
 This is an **educational sandbox** designed to clearly illustrate:
 - How enterprise security layers work in practice
@@ -288,7 +288,7 @@ It is **not** intended for production use without significant hardening (rate li
 
 ---
 
-## 🙋 Questions?
+## Questions?
 
 - **How does the similarity scoring prevent false positives?**  
   See the threshold logic in `dedup.js` lines 186–204. Scores 0.60–0.82 trigger a *manual review* step, not auto-deletion.
@@ -304,7 +304,7 @@ It is **not** intended for production use without significant hardening (rate li
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
