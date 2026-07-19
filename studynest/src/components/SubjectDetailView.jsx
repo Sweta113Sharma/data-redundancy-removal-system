@@ -136,12 +136,9 @@ export default function SubjectDetailView({ context }) {
       >
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
           <div>
-            <h1 className="text-2xl md:text-3xl font-display font-bold mb-1">
+            <h1 className="text-2xl md:text-3xl font-display font-bold tracking-tight">
               {selectedSubject.title}
             </h1>
-            <span className="text-sm px-3 py-1 rounded-full glass-card border border-white/5">
-              {selectedSubject.code}
-            </span>
           </div>
           
           <div className="flex flex-wrap gap-2">
@@ -153,25 +150,6 @@ export default function SubjectDetailView({ context }) {
               {aiLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4 text-amber-400" />}
               AI Overview
             </button>
-            
-            <button
-              onClick={handleAISubjectQuiz}
-              disabled={aiLoading}
-              className="px-4 py-2 rounded-xl bg-gradient-to-r from-primary to-purple-500 text-white font-medium text-sm flex items-center gap-2 hover:shadow-glow transition-all disabled:opacity-50"
-            >
-              {aiLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
-              AI Quiz
-            </button>
-
-            {quizzes.length > 0 && (
-              <button
-                onClick={startQuiz}
-                className="px-4 py-2 rounded-xl bg-emerald-500 text-white font-medium text-sm flex items-center gap-2 hover:brightness-110 transition-all"
-              >
-                <HelpCircle className="w-4 h-4" />
-                Original Quiz
-              </button>
-            )}
           </div>
         </div>
 

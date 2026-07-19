@@ -140,7 +140,6 @@ export default function SubjectsView({ context }) {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold truncate">{subject.title}</h3>
-                    <p className="text-sm text-muted-foreground">{subject.code}</p>
                     <p className="text-xs text-muted-foreground mt-1">
                       {subject.units.length} units
                     </p>
