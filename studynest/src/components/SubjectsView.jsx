@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, BookOpen, Clock, CheckCircle } from 'lucide-react'
+import { ArrowLeft, BookOpen, Clock, CheckCircle, FileText, Download, ExternalLink } from 'lucide-react'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -169,6 +169,87 @@ export default function SubjectsView({ context }) {
             )
           })
         )}
+      </motion.div>
+
+      {/* Official NIET Syllabus Section */}
+      <motion.div 
+        variants={itemVariants} 
+        className="mt-12 pt-8 border-t border-white/10"
+      >
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div>
+            <h2 className="text-xl font-display font-bold flex items-center gap-2">
+              <FileText className="w-5 h-5 text-primary" />
+              Official NIET Autonomous Syllabus
+            </h2>
+            <p className="text-sm text-muted-foreground mt-1">
+              Access the official evaluation schemes and curriculum frameworks directly from the Noida Institute of Engineering & Technology.
+            </p>
+          </div>
+          <a
+            href="https://www.niet.co.in/academics/syllabus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs px-3 py-1.5 rounded-xl glass-card border border-white/5 hover:border-primary/30 flex items-center gap-1.5 transition-all text-muted-foreground hover:text-foreground w-fit"
+          >
+            <span>All Branches Portal</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            {
+              year: '1st Year',
+              title: 'B.Tech CSE Syllabus',
+              desc: 'Calculus, Semiconductor Physics, AI Fundamentals & Labs',
+              url: 'https://www.niet.co.in/assets/frontend/pdf/syllabus/B.Tech-in-Computer-Science-and-Engineering-CSE-First-Year.pdf'
+            },
+            {
+              year: '2nd Year',
+              title: 'B.Tech CSE Syllabus',
+              desc: 'Data Structures, DBMS, Discrete Mathematics & Labs',
+              url: 'https://www.niet.co.in/assets/frontend/pdf/syllabus/2025-26/second-year/B.Tech%20in%20Computer%20Science%20%20Engineering%20(CSE)%20Second%20Year%202025-26.pdf'
+            },
+            {
+              year: '3rd Year',
+              title: 'B.Tech CSE Syllabus',
+              desc: 'Operating Systems, Web Tech, Theory of Computation',
+              url: 'https://www.niet.co.in/assets/frontend/pdf/syllabus/2025-26/third-year/B.Tech%20in%20Computer%20Science%20%20Engineering%20(CSE)%20Third%20Year%202025-26.pdf'
+            },
+            {
+              year: '4th Year',
+              title: 'B.Tech CSE Syllabus',
+              desc: 'Cloud Computing, Machine Learning, Compiler Design',
+              url: 'https://www.niet.co.in/assets/frontend/pdf/syllabus/2025-26/forth-year/B.Tech%20in%20Computer%20Science%20%20Engineering%20(CSE)%20Fourth%20Year%202025-26.pdf'
+            }
+          ].map((item, idx) => (
+            <motion.a
+              key={idx}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-5 rounded-2xl glass-card border border-white/5 hover:border-primary/20 transition-all flex flex-col justify-between group hover:shadow-glow-sm"
+              whileHover={{ y: -4, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-bold text-primary px-2 py-0.5 rounded-full bg-primary/10">
+                    {item.year}
+                  </span>
+                  <Download className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-xs text-muted-foreground line-clamp-2">
+                  {item.desc}
+                </p>
+              </div>
+            </motion.a>
+          ))}
+        </div>
       </motion.div>
     </motion.div>
   )
