@@ -257,26 +257,25 @@ This unit focuses on advanced differentiation concepts, successive derivative ex
 Expect Leibniz theorem proofs and multi-variable Jacobians. Maclaurin expansions for standard functions (e^x, sin x, log(1+x)) are highly common.`;
       }
       return `### Revision Notes: Differential Calculus
-Key theorems and n-th derivative standard forms.
+Concise last-minute cheat sheet with standard formulas and memory aids.
 
 - **Standard n-th Derivatives**:
-  - d^n/dx^n (x^m) = m!/(m-n)! * x^(m-n)
-  - d^n/dx^n (e^(ax)) = a^n * e^(ax)
-  - d^n/dx^n [log(ax+b)] = (-1)^(n-1) * (n-1)! * a^n / (ax+b)^n
-  - d^n/dx^n [sin(ax+b)] = a^n * sin(ax + b + nπ/2)
-- **Leibniz Theorem Formula**:
-  - (u v)_n = u_n v + C(n,1) u_(n-1) v_1 + C(n,2) u_(n-2) v_2 + ... + u v_n
-- **Homogeneous Functions**:
-  - A function f(x,y) is homogeneous of degree n if f(tx, ty) = t^n * f(x,y).
-- **Euler\'s Theorem Extension**:
-  - If u = f(x,y) is homogeneous of degree n, then:
-    - x(∂u/∂x) + y(∂u/∂y) = n * u
-    - x^2(∂^2u/∂x^2) + 2xy(∂^2u/∂x∂y) + y^2(∂^2u/∂y^2) = n(n-1)u
-- **Jacobian Chain Rule**:
-  - If u, v are functions of r, s and r, s are functions of x, y:
-    - ∂(u,v)/∂(x,y) = [∂(u,v)/∂(r,s)] * [∂(r,s)/∂(x,y)]
-- **Jacobian Inverse Property**:
-  - J * J\' = 1, where J = ∂(u,v)/∂(x,y) and J\' = ∂(x,y)/∂(u,v).`;
+  - **Power Function**: $d^n/dx^n (x^m) = \frac{m!}{(m-n)!} x^{m-n}$
+  - **Exponential**: $d^n/dx^n (e^{ax}) = a^n e^{ax}$
+  - **Logarithmic**: $d^n/dx^n [\log(ax+b)] = \frac{(-1)^{n-1}(n-1)! a^n}{(ax+b)^n}$
+  - **Sine Wave**: $d^n/dx^n [\sin(ax+b)] = a^n \sin(ax + b + \frac{n\pi}{2})$
+- **Leibniz Theorem (Product Rule)**:
+  - **Formula**: $(u \cdot v)_n = u_n v + ^nC_1 u_{n-1} v_1 + ^nC_2 u_{n-2} v_2 + \dots + u v_n$
+  - **Mnemonic: "B-D-I (Binomial Decrease Increase)"**: The coefficients follow Binomial combinations ($^nC_r$), derivatives of the first term $u$ **D**ecrease ($u_n \to u_{n-1}$), while derivatives of the second term $v$ **I**ncrease ($v \to v_1 \to v_2$).
+- **Euler\'s Homogeneous Function Theorem**:
+  - Homogeneous definition: $f(tx, ty) = t^n f(x,y)$ (degree $n$).
+  - **First Order**: $x\frac{\partial u}{\partial x} + y\frac{\partial u}{\partial y} = n \cdot u$
+  - **Second Order**: $x^2\frac{\partial^2u}{\partial x^2} + 2xy\frac{\partial^2u}{\partial x\partial y} + y^2\frac{\partial^2u}{\partial y^2} = n(n-1)u$
+  - **Mnemonic: "E-O-M (Euler Order Multiplication)"**: The sum of coordinates times partial derivatives equals the function scaled by its **O**rder $n$ (or $n(n-1)$ for second order).
+- **Jacobian Determinants (Transformation scale)**:
+  - **Chain Rule**: $\frac{\partial(u,v)}{\partial(x,y)} = \frac{\partial(u,v)}{\partial(r,s)} \times \frac{\partial(r,s)}{\partial(x,y)}$ (Works like fraction multiplication!).
+  - **Reciprocal Property**: $J \times J' = 1$, where $J = \frac{\partial(u,v)}{\partial(x,y)}$ and $J' = \frac{\partial(x,y)}{\partial(u,v)}$.
+  - **Mnemonic: "J-R-O (Jacobian Reciprocal One)"**: The Jacobian of a transformation times its reverse is always **One** ($J \cdot J' = 1$).`;
     }
 
     if (userMessage.includes('multiple integrals')) {
@@ -319,28 +318,30 @@ This unit extends integration to higher dimensions. It covers double and triple 
 Changing the order of integration and calculating volumes using triple integrals are heavily weighted exam questions. Practice sketching circular and parabolic regions.`;
       }
       return `### Revision Notes: Multiple Integrals
-Quick formulas and steps for coordinate transformations.
+Quick coordinate transformation cheat sheet and volume integration shortcuts.
 
-- **Iterated Integral Evaluation**:
-  - Always integrate from the innermost limits (usually variables) to the outermost limits (always constants).
-- **Change of Order Steps**:
-  1. Sketch the boundary curves from original limits.
-  2. Identify the integration region.
-  3. Swap from vertical strip (y-limits depend on x) to horizontal strip (x-limits depend on y) or vice-versa.
-  4. Write new limits and integrate.
-- **Jacobian Transformations**:
-  - Cartesian (x,y) -> Polar (r,θ):
-    - x = r cos θ, y = r sin θ
-    - dx dy = r dr dθ
-  - Cartesian (x,y,z) -> Spherical (r,θ,φ):
-    - x = r sin θ cos φ, y = r sin θ sin φ, z = r cos θ
-    - dx dy dz = r^2 sin θ dr dθ dφ
-- **Dirichlet\'s Theorem Formula**:
-  - If x >= 0, y >= 0, z >= 0 and (x + y + z) <= 1:
-    - ∫∫∫ x^(p-1) y^(q-1) z^(r-1) dx dy dz = Γ(p) * Γ(q) * Γ(r) / Γ(p + q + r + 1)
-- **Liouville\'s Extension**:
-  - Evaluates integrals over the domain h_1 <= (x+y+z) <= h_2:
-    - Replace the Γ(p+q+r+1) division with an integral: [Γ(p)Γ(q)Γ(r)/Γ(p+q+r)] * ∫_(h_1)^(h_2) u^(p+q+r-1) f(u) du.`;
+- **Iterated Integral Rule**:
+  - Integrate **inside-out**: innermost variables first, constants last.
+- **Change of Order of Integration**:
+  1. Plot the boundary curves from the original limits.
+  2. Draw the strip (vertical for $dy\,dx$, horizontal for $dx\,dy$).
+  3. Swap the strip orientation (e.g. from vertical to horizontal) to find new limits.
+- **Coordinate System Transformations**:
+  - **Polar Coordinates** ($2D$):
+    - $x = r \cos \theta$, $y = r \sin \theta$
+    - Area scaling factor: $dx\,dy = r\,dr\,d\theta$
+    - **Mnemonic: "P-R (Polar Radius)"**: The Polar transformation introduces a lone **R** radius scaling factor.
+  - **Spherical Coordinates** ($3D$):
+    - $x = r \sin \theta \cos \phi$, $y = r \sin \theta \sin \phi$, $z = r \cos \theta$
+    - Volume scaling factor: $dx\,dy\,dz = r^2 \sin \theta\,dr\,d\theta\,d\phi$
+    - **Mnemonic: "S-R-S (Spherical Radius-Sine)"**: Spherical transformation scales by **R** squared **S**ine $\theta$ ($r^2 \sin\theta$).
+- **Dirichlet\'s Theorem (Volume Integrals)**:
+  - For $x \ge 0, y \ge 0, z \ge 0$ and $(x+y+z) \le 1$:
+    - $\iiint x^{p-1} y^{q-1} z^{r-1} dx\,dy\,dz = \frac{\Gamma(p)\Gamma(q)\Gamma(r)}{\Gamma(p+q+r+1)}$
+  - **Mnemonic: "D-P-S (Dirichlet: Product over Sum + 1)"**: The numerator is the **P**roduct of individual gammas, and the denominator is the **S**um of parameters plus **One** in Gamma.
+- **Liouville\'s Extension (Variable limits)**:
+  - For domain $h_1 \le (x+y+z) \le h_2$:
+    - $\iiint x^{p-1} y^{q-1} z^{r-1} f(x+y+z) dx\,dy\,dz = \frac{\Gamma(p)\Gamma(q)\Gamma(r)}{\Gamma(p+q+r)} \int_{h_1}^{h_2} u^{p+q+r-1} f(u) du$`;
     }
 
     if (userMessage.includes('vector calculus')) {
@@ -379,26 +380,27 @@ Vector calculus is the study of differentiation and integration of vector fields
 Verify Gauss or Stokes\' Theorem for a given cuboid or hemispherical surface. These theorems are always tested with 10-mark questions.`;
       }
       return `### Revision Notes: Vector Calculus
-Core operations, identities, and integral vector equations.
+Essential vector differentiation operations, identities, and core theorems.
 
-- **Vector Differential Operator**:
-  - Del (∇) = i(∂/∂x) + j(∂/∂y) + k(∂/∂z)
-- **Gradient, Divergence, Curl Definitions**:
-  - Gradient of φ: ∇φ = i(∂φ/∂x) + j(∂φ/∂y) + k(∂φ/∂z) (Result is a vector)
-  - Divergence of F: ∇·F = ∂F_x/∂x + ∂F_y/∂y + ∂F_z/∂z (Result is a scalar)
-  - Curl of F: ∇×F = Det[i, j, k; ∂/∂x, ∂/∂y, ∂/∂z; F_x, F_y, F_z] (Result is a vector)
+- **Vector Operator Del ($\nabla$)**:
+  - $\nabla = \mathbf{i}\frac{\partial}{\partial x} + \mathbf{j}\frac{\partial}{\partial y} + \mathbf{k}\frac{\partial}{\partial z}$
+- **Core Operations**:
+  - **Gradient (of Scalar $\phi$)**: $\nabla\phi = \mathbf{i}\frac{\partial\phi}{\partial x} + \mathbf{j}\frac{\partial\phi}{\partial y} + \mathbf{k}\frac{\partial\phi}{\partial z}$ (Vector normal to surface).
+  - **Divergence (of Vector $\mathbf{F}$)**: $\nabla\cdot\mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}$ (Scalar representing flux).
+  - **Curl (of Vector $\mathbf{F}$)**: $\nabla\times\mathbf{F} = \det\begin{bmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ F_x & F_y & F_z \end{bmatrix}$ (Vector representing rotation).
+  - **Mnemonic: "G-V-D-S-C-V (Grad Vector, Div Scalar, Curl Vector)"**: **G**radient outputs a **V**ector, **D**ivergence outputs a **S**calar, and **C**url outputs a **V**ector.
 - **Key Vector Identities**:
-  - div(curl F) = ∇·(∇×F) = 0 (Divergence of curl is always zero)
-  - curl(grad φ) = ∇×(∇φ) = 0 (Curl of gradient is always zero)
-  - div(φ F) = φ div F + F · grad φ
-  - curl(φ F) = φ curl F + (grad φ) × F
-- **Solenoidal & Irrotational Test**:
-  - Vector F is Solenoidal <=> ∇·F = 0
-  - Vector F is Irrotational <=> ∇×F = 0
-- **Vector Theorems Cheat Sheet**:
-  - **Green\'s**: Relates a line integral to a double integral.
-  - **Gauss**: Relates a surface integral to a volume integral.
-  - **Stokes\'**: Relates a line integral to a surface integral.`;
+  - **Curl of Gradient**: $\nabla\times(\nabla\phi) = \mathbf{0}$
+  - **Divergence of Curl**: $\nabla\cdot(\nabla\times\mathbf{F}) = 0$
+  - **Mnemonic: "C-G-Zero & D-C-Zero"**: **C**url of **G**rad is **Zero**, and **D**ivergence of **C**url is **Zero**.
+- **Vector Field Classifications**:
+  - **Solenoidal**: Field has no source/sink $\iff \nabla\cdot\mathbf{F} = 0$ (like incompressible fluid).
+  - **Irrotational**: Field is conservative $\iff \nabla\times\mathbf{F} = \mathbf{0}$ (can be written as $\mathbf{F} = \nabla\phi$).
+- **Vector Integral Theorems**:
+  - **Green\'s Theorem**: $\oint (P\,dx + Q\,dy) = \iint (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}) dx\,dy$
+  - **Gauss Divergence**: $\iint \mathbf{F}\cdot\mathbf{n}\,dS = \iiint (\nabla\cdot\mathbf{F}) dV$ (Relates **S**urface flux to **V**olume divergence).
+  - **Stokes\' Theorem**: $\oint \mathbf{F}\cdot d\mathbf{r} = \iint (\nabla\times\mathbf{F})\cdot\mathbf{n}\,dS$ (Relates **L**ine loop to **S**urface curl).
+  - **Mnemonic: "G-L-S & G-S-V (Green-Line-Surface, Gauss-Surface-Volume)"**: **Green\'s** / **Stokes\'** convert **L**ine integrals to **S**urface, **Gauss** converts **S**urface to **V**olume.`;
     }
 
     if (userMessage.includes('beta & gamma') || userMessage.includes('gamma function') || userMessage.includes('beta function')) {
@@ -441,25 +443,27 @@ This unit covers improper integrals and introduces the special Beta and Gamma tr
 Master evaluations of trigonometric definite integrals from 0 to π/2 using the Beta-Gamma relation. Proving the duplication formula is a very common theoretical question.`;
       }
       return `### Revision Notes: Beta & Gamma Functions
-Key identities, recurrence formulas, and integral evaluations.
+Concise summary of improper integrals, Euler integrals, and trigonometric evaluations.
 
-- **Gamma Function Properties**:
-  - Γ(1) = 1
-  - Γ(n+1) = n * Γ(n) (valid for any positive real number)
-  - Γ(n+1) = n! (if n is a positive integer)
-  - Γ(1/2) = √π
-- **Beta Function Properties**:
-  - Symmetry: B(m,n) = B(n,m)
-  - Alternate Form (Limits 0 to ∞): B(m,n) = ∫_0^∞ [x^(m-1) / (1+x)^(m+n)] dx
-- **Trigonometric Integral Reduction Formula**:
-  - ∫_0^(π/2) sin^p(θ) cos^q(θ) dθ = Γ((p+1)/2) * Γ((q+1)/2) / [2 * Γ((p+q+2)/2)]
-- **Useful Integrals**:
-  - ∫_0^∞ e^(-x^2) dx = √π / 2
-- **Gamma Recurrence for Fractions**:
-  - Γ(5/2) = (3/2) * (1/2) * Γ(1/2) = 3√π / 4
-  - Γ(7/2) = (5/2) * (3/2) * (1/2) * Γ(1/2) = 15√π / 8
-- **Duplication Formula Form**:
-  - 2^(2n-1) * Γ(n) * Γ(n + 1/2) = √π * Γ(2n)`;
+- **Gamma Function ($\Gamma(n)$)**:
+  - Definition: $\Gamma(n) = \int_0^\infty e^{-t} t^{n-1} dt$ (Eulerian Integral of the 2nd kind).
+  - Recurrence: $\Gamma(n+1) = n\Gamma(n)$ (for real $n$), and $\Gamma(n+1) = n!$ (for integer $n$).
+  - Half-Gamma special value: $\Gamma(1/2) = \sqrt{\pi}$.
+  - **Mnemonic: "G-H-P (Gamma-Half-Pi)"**: The Gamma of **H**alf is the square root of **P**i ($\Gamma(1/2) = \sqrt{\pi}$).
+- **Beta Function ($B(m,n)$)**:
+  - Definition: $B(m,n) = \int_0^1 x^{m-1} (1-x)^{n-1} dx$ (Eulerian Integral of the 1st kind).
+  - Alternate form: $B(m,n) = \int_0^\infty \frac{x^{m-1}}{(1+x)^{m+n}} dx$.
+- **Beta-Gamma Relationship**:
+  - Formula: $B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$
+  - **Mnemonic: "B-P-S (Beta Product-Sum)"**: Beta is the **P**roduct of gammas divided by their **S**um.
+- **Trigonometric Definite Integral Evaluation**:
+  - $\int_0^{\pi/2} \sin^p\theta \cos^q\theta \,d\theta = \frac{\Gamma(\frac{p+1}{2}) \Gamma(\frac{q+1}{2})}{2 \Gamma(\frac{p+q+2}{2})}$
+  - **Mnemonic: "Half-Angle-Plus-One"**: For $\sin^p\theta \cos^q\theta$, transform indices to Gamma arguments by **adding one** and dividing by **two** ($\frac{p+1}{2}$).
+- **Duplication Formula**:
+  - $\Gamma(m)\Gamma(m + 1/2) = \frac{\sqrt{\pi}}{2^{2m-1}} \Gamma(2m)$
+- **Gamma Recurrence Fractions**:
+  - $\Gamma(5/2) = \frac{3}{2}\frac{1}{2}\Gamma(1/2) = \frac{3\sqrt{\pi}}{4}$
+  - $\Gamma(7/2) = \frac{5}{2}\frac{3}{2}\frac{1}{2}\Gamma(1/2) = \frac{15\sqrt{\pi}}{8}$`;
     }
 
     if (userMessage.includes('electromagnetic field') || userMessage.includes('wave propagation')) {
@@ -596,32 +600,31 @@ Master calculation steps for eigenvalues of 3x3 matrices. Diagonalization proofs
       }
       if (systemPrompt.includes('notes')) {
         return `### Revision Notes: Matrices
-Complete formula guide and exam checklist for Unit 1.
+Core matrix theorems, eigenvalue rules, and diagonalization checklist.
 
-- **Matrix Types Properties**:
-  - Symmetric: a_ij = a_ji
-  - Skew-Symmetric: a_ij = -a_ji (and a_ii = 0)
-  - Orthogonal: A^-1 = A^T
-- **Elementary Row Transformations (Rules)**:
-  - Interchanging any two rows (R_i <-> R_j)
-  - Multiplying a row by a non-zero scalar (R_i -> k * R_i)
-  - Adding a scalar multiple of a row to another row (R_i -> R_i + k * R_j)
+- **Matrix Property Categories**:
+  - **Symmetric**: $A^T = A$ (or $a_{ij} = a_{ji}$)
+  - **Skew-Symmetric**: $A^T = -A$ (diagonal elements $a_{ii} = 0$)
+  - **Orthogonal**: $A^T = A^{-1}$ (or $A \cdot A^T = I$)
+  - **Mnemonic: "S-S-O (Same, Sign, One)"**: **S**ymmetric transpose is the **Same** ($A^T=A$), **S**kew transpose switches **Sign** ($A^T=-A$), and **O**rthogonal product yields the identity **One** ($A A^T = I$).
 - **Rank Properties**:
-  - Rank(A) = Rank(A^T)
-  - Rank(AB) <= min(Rank(A), Rank(B))
-  - If det(A) != 0, Rank(A) = n (Full Rank)
-- **Cayley-Hamilton Theorem & Inverse Application**:
-  - If λ^3 - c_1 λ^2 + c_2 λ - c_3 = 0, then A^3 - c_1 A^2 + c_2 A - c_3 I = 0.
-  - Pre-multiply by A^-1 to solve: A^-1 = (1/c_3)(A^2 - c_1 A + c_2 I).
-- **Eigenvalues Properties**:
-  - Sum of Eigenvalues = Trace(A) (Sum of diagonal elements).
-  - Product of Eigenvalues = det(A).
-  - Eigenvalues of A^T are same as A.
-  - Eigenvalues of A^-1 are 1/λ_i.
-  - Eigenvalues of A^k are λ_i^k.
-- **Diagonalization Condition**:
-  - Matrix A is diagonalizable if and only if it has n linearly independent eigenvectors.
-  - If all eigenvalues are distinct, it is guaranteed to be diagonalizable.`;
+  - $\text{Rank}(A) = \text{Rank}(A^T)$
+  - $\text{Rank}(A \cdot B) \le \min(\text{Rank}(A), \text{Rank}(B))$
+  - If $\det(A) \ne 0 \implies \text{Rank}(A) = n$ (Full Rank).
+- **Cayley-Hamilton Theorem**:
+  - Every square matrix satisfies its own characteristic equation: $p(A) = 0$.
+  - For characteristic equation $\lambda^3 - c_1 \lambda^2 + c_2 \lambda - c_3 = 0 \implies A^3 - c_1 A^2 + c_2 A - c_3 I = 0$.
+  - **Inverse Matrix Formula**: $A^{-1} = \frac{1}{c_3}(A^2 - c_1 A + c_2 I)$ (obtained by pre-multiplying by $A^{-1}$).
+- **Eigenvalue Rules**:
+  - **Sum**: $\sum \lambda_i = \text{Trace}(A)$ (Sum of main diagonal).
+  - **Product**: $\prod \lambda_i = \det(A)$.
+  - **Mnemonic: "T-S-D-P (Trace-Sum, Det-Product)"**: **T**race equals the **S**um of eigenvalues; **D**eterminant equals the **P**roduct.
+  - Eigenvalues of $A^T$ are same as $A$.
+  - Eigenvalues of inverse $A^{-1}$ are $\frac{1}{\lambda_i}$.
+  - Eigenvalues of powers $A^k$ are $\lambda_i^k$.
+- **Diagonalization Checklist**:
+  - Matrix $A$ is diagonalizable $\iff$ it has $n$ linearly independent eigenvectors.
+  - If all eigenvalues $\lambda_i$ are distinct, $A$ is guaranteed to be diagonalizable.`;
       }
       if (systemPrompt.includes('qa pairs')) {
         return `Q1: State the Cayley-Hamilton Theorem.
@@ -791,8 +794,12 @@ Answer: A quarter-wave plate is a double-refracting crystal plate that introduce
   }
 
   async generateNotes(content, unitTitle) {
-    const systemPrompt = `You are an expert engineering professor. Generate concise, exam-focused revision notes.
-Format: Use bullet points with clear headings. Include formulas and key concepts. Keep suitable for last-minute revision.`;
+    const systemPrompt = `You are an expert engineering professor. Generate highly detailed yet precise, exam-focused revision notes optimized for last-minute cramming.
+Format: Use bullet points with clear, bold headings.
+Requirements:
+1. Include all key formulas, mathematical equations, and variable explanations clearly.
+2. Incorporate creative mnemonics, acronyms, or memory tricks to help students memorize formulas and complex sequences/concepts instantly.
+3. Keep explanations highly concise and conceptual for fast speed-reading.`;
 
     const userMessage = `Generate revision notes for: ${unitTitle}\n\nContent:\n${content}`;
     return await this.callAI([{ role: 'user', content: userMessage }], systemPrompt);
