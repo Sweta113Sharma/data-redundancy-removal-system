@@ -45,7 +45,7 @@ export const semesters = {
     'cse': {
         1: [
             {
-                id: 'math-1', key: 'math', title: 'Engineering Mathematics I', code: 'KAS101',
+                id: 'math-1', key: 'math', title: 'Engineering Mathematics-I', code: 'AAS0103',
                 units: [
                     {
                         title: 'Unit 1: Matrices',
@@ -60,7 +60,7 @@ export const semesters = {
                         ]
                     },
                     {
-                        title: 'Unit 2: Differential Calculus',
+                        title: 'Unit 2: Differential Calculus-I',
                         aiSummary: 'Covers successive differentiation, Leibniz theorem, Rolle\'s theorem, Mean Value theorems (Lagrange & Cauchy), Taylor and Maclaurin series expansions. Tip: Master the expansion formulas — they appear every exam.',
                         ppts: [{ title: 'Differential Calculus Slides', size: '2.8 MB' }],
                         notes: [{ title: 'Formulas Sheet - Calculus', desc: 'All differentiation rules + solved PYQs' }],
@@ -72,66 +72,305 @@ export const semesters = {
                         ]
                     },
                     {
-                        title: 'Unit 3: Multiple Integrals',
-                        aiSummary: 'Covers double and triple integrals, change of order of integration, change of variables, Jacobian, and applications to area and volume calculation. Tip: Master the Dirichlet\'s integral theorem for fast volume integrations.',
-                        ppts: [{ title: 'Multiple Integrals Complete', size: '3.5 MB' }],
-                        notes: [{ title: 'Integrals Formula Guide', desc: 'Step-by-step change of order guide' }],
+                        title: 'Unit 3: Differential Calculus-II',
+                        aiSummary: 'Focuses on partial differentiation, Euler\'s theorem on homogeneous functions, total derivatives, and Taylor\'s theorem for two variables.',
+                        ppts: [{ title: 'Calculus-II PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'Calculus-II Revision Sheet', desc: 'Euler\'s theorem & partial derivatives' }],
                         youtube: [
-                            { title: 'Double Integrals - Concepts & Evaluation', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=3M6Z6Qj023w' },
+                            { title: 'Euler\'s Theorem Homogeneous Functions', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' },
+                            { title: 'Total Differentiation & Chain Rule', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q4c33f2T-8g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Multivariable Calculus',
+                        aiSummary: 'Covers double and triple integrals, change of order of integration, coordinate transformations (Polar/Spherical/Cylindrical) using Jacobians, and Dirichlet\'s integrals.',
+                        ppts: [{ title: 'Multivariable Calculus PPT', size: '4.5 MB' }],
+                        notes: [{ title: 'Integrals Cheatsheet', desc: 'Double/triple integrals & area/volume' }],
+                        youtube: [
+                            { title: 'Double Integrals Concepts', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=3M6Z6Qj023w' },
                             { title: 'Change of Order of Integration', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=xH6S3nQvM5E' },
-                            { title: 'Triple Integrals - Volume Calculations', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=48_S69sXU_A' },
-                            { title: 'Change of Variables & Jacobians', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q4c33f2T-8g' }
+                            { title: 'Dirichlet\'s Theorem & Triple Integrals', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=48_S69sXU_A' }
                         ]
                     },
                     {
-                        title: 'Unit 4: Vector Calculus',
-                        aiSummary: 'Covers vector differentiation (gradient, divergence, curl) and vector integration (line, surface, and volume integrals). Key Theorems: Gauss Divergence Theorem, Green\'s Theorem, and Stokes\' Theorem. Focus on physical interpretations of curl and divergence.',
-                        ppts: [{ title: 'Vector Calculus Presentation', size: '4.2 MB' }],
-                        notes: [{ title: 'Vector Theorems Solved PYQs', desc: 'Detailed proofs and exam problems' }],
+                        title: 'Unit 5: Aptitude-I',
+                        aiSummary: 'Quantitative aptitude concepts: Number systems, Profit & Loss, Percentage, Simple and Compound Interest, and Ratio & Proportion.',
+                        ppts: [{ title: 'Aptitude-I PDF', size: '1.9 MB' }],
+                        notes: [{ title: 'Aptitude Formulas Sheet', desc: 'Shortcuts and speed math tricks' }],
                         youtube: [
-                            { title: 'Gradient, Divergence & Curl Vector Fields', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=R9Ym08c8KCc' },
-                            { title: 'Directional Derivative of a Vector', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' },
-                            { title: 'Green\'s Theorem in a Plane', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=o0vO2w4U7y8' },
-                            { title: 'Gauss Divergence & Stokes\' Theorem PYQs', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=hB9N0zO2sI0' }
-                        ]
-                    },
-                    {
-                        title: 'Unit 5: Beta & Gamma Functions',
-                        aiSummary: 'Defines improper integrals of first and second kinds. Explains Beta and Gamma functions, their properties, relationship, and utility in solving complicated definite integrals. Essential for mechanical and physics derivations.',
-                        ppts: [{ title: 'Beta & Gamma Lecture Slides', size: '2.5 MB' }],
-                        notes: [{ title: 'Beta & Gamma Formula Sheet', desc: 'Integral properties and quick tricks' }],
-                        youtube: [
-                            { title: 'Beta & Gamma Functions Definition & Properties', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=u17g19d4T_o' },
-                            { title: 'Relation Between Beta & Gamma Functions', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=q0k9F3yH2xI' },
-                            { title: 'Duplication Formula & Integral Reductions', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=tM8y-Y9Z3a8' },
-                            { title: 'Solving Definite Integrals using Beta/Gamma', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q8c7G9d4t_A' }
+                            { title: 'Quantitative Aptitude Complete Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' },
+                            { title: 'Profit, Loss & Discount Tricks', channel: 'Feel Free to Learn', url: 'https://www.youtube.com/watch?v=jiEaKYI0ATY' }
                         ]
                     }
                 ]
             },
             {
-                id: 'physics-1', key: 'physics', title: 'Engineering Physics', code: 'KAS102',
+                id: 'bee-1', key: 'bee', title: 'Basic Electrical and Electronics Engineering', code: 'AEC0101',
                 units: [
                     {
-                        title: 'Unit 1: Wave Optics',
-                        aiSummary: 'Interference: Young\'s double-slit experiment, Newton\'s rings, thin film interference. Diffraction: Fresnel vs Fraunhofer, single slit diffraction pattern. Polarization: Brewster\'s law, Malus law, double refraction. Key formulas: fringe width = λD/d, resolving power of grating = nN.',
-                        ppts: [{ title: 'Wave Optics Lecture', size: '2.1 MB' }],
-                        notes: [{ title: 'Optics Quick Notes', desc: 'Derivations and numericals' }],
+                        title: 'Unit 1: D.C Circuit Analysis and Network Theorems',
+                        aiSummary: 'Covers active & passive elements, sources, Kirchhoff\'s laws, nodal & loop analysis, Superposition, Thevenin\'s, Norton\'s, and Maximum Power Transfer theorems.',
+                        ppts: [{ title: 'DC Circuit Basics', size: '2.5 MB' }],
+                        notes: [{ title: 'Circuit Theorems Guide', desc: 'Solved mesh/nodal analysis problems' }],
                         youtube: [
-                            { title: 'Wave Optics Complete', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                            { title: 'Kirchhoff\'s Laws & Nodal Analysis', channel: 'Gate Smashers', url: 'https://youtu.be/FjaJEo7knF4' },
+                            { title: 'Thevenin\'s & Superposition Theorems', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
                         ]
                     },
                     {
-                        title: 'Unit 2: Electromagnetic Field Theory',
-                        aiSummary: 'Maxwell\'s equations in differential and integral forms, displacement current, Poynting vector, Poynting theorem. Electromagnetic wave propagation in free space and dielectric media. Important: Focus on boundary conditions and wave impedance.',
-                        ppts: [{ title: 'Electromagnetic Fields PPT', size: '3.4 MB' }],
-                        notes: [{ title: 'Maxwell Equations Revision Sheet', desc: 'Equation proofs & derivations' }],
+                        title: 'Unit 2: Steady State Analysis of AC Circuit',
+                        aiSummary: 'AC fundamentals, phasors, RLC series & parallel circuits, resonance, and three-phase balanced star/delta connections.',
+                        ppts: [{ title: 'AC Analysis Slides', size: '3.0 MB' }],
+                        notes: [{ title: 'AC Formulas & Phasor Diagrams', desc: 'Power factor and RLC relations' }],
                         youtube: [
-                            { title: 'Electromagnetic Field Theory', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=h6sXoB2eIig' }
+                            { title: 'Single Phase AC Circuits', channel: 'Gate Smashers', url: 'https://youtu.be/ulGKCeOoR88' }
                         ]
                     },
                     {
-                        title: 'Unit 3: Quantum Mechanics',
+                        title: 'Unit 3: Single Phase Transformer & Power Systems',
+                        aiSummary: 'Transformer operating principle, EMF equation, equivalent circuit, losses, efficiency. Basics of MCB, ELCB, and earthing.',
+                        ppts: [{ title: 'Transformer & Power Systems', size: '3.4 MB' }],
+                        notes: [{ title: 'Transformer Derivations', desc: 'Equivalent circuit and sessional notes' }],
+                        youtube: [
+                            { title: 'Single Phase Transformer EMF Equation', channel: 'Neso Academy', url: 'https://youtu.be/GgckE4H5AJE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Diode and Their Applications',
+                        aiSummary: 'PN junction diode properties, rectifiers, clippers, clampers, Zener diode regulator, LEDs, and basic display devices.',
+                        ppts: [{ title: 'Semiconductor Diode PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Diode Circuit Cheat Sheet', desc: 'Full-wave/half-wave rectifier formulas' }],
+                        youtube: [
+                            { title: 'PN Junction Diode & Rectifiers', channel: 'Neso Academy', url: 'https://youtu.be/EdUAecpYVWQ' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Operational Amplifiers & Op-Amp Applications',
+                        aiSummary: 'Op-amp characteristics, inverting/non-inverting configuration, summing amplifier, integrator, differentiator, sensors, and IoT introduction.',
+                        ppts: [{ title: 'Op-Amps & IoT', size: '3.1 MB' }],
+                        notes: [{ title: 'Op-Amp Solved Circuits', desc: 'Ideal op-amp properties and formulas' }],
+                        youtube: [
+                            { title: 'Introduction to Operational Amplifiers', channel: 'Neso Academy', url: 'https://youtu.be/AuZ00cQ0UrE' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'python-1', key: 'java', title: 'Problem Solving using Python', code: 'ACSE0101',
+                units: [
+                    {
+                        title: 'Unit 1: Basics of python programming',
+                        aiSummary: 'Introduction to python environment, variables, data types, standard input/output, operators, and basic expression evaluation.',
+                        ppts: [{ title: 'Python Basics PPT', size: '2.0 MB' }],
+                        notes: [{ title: 'Python Syntax Cheatsheet', desc: 'Variables, operators & formatting' }],
+                        youtube: [
+                            { title: 'Python Programming Course', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=aqvDMCY516A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Decision Control Statements',
+                        aiSummary: 'Flow control, conditional branching (if, if-else, elif), loops (while, for), break, continue, and pass control statements.',
+                        ppts: [{ title: 'Control Statements Slides', size: '2.2 MB' }],
+                        notes: [{ title: 'Conditional Statements Guide', desc: 'Nested loops and branching examples' }],
+                        youtube: [
+                            { title: 'Loops & Conditionals in Python', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Function and Modules',
+                        aiSummary: 'Defining functions, argument passing, return values, scope of variables, recursion, lambda functions, and modules/packages creation.',
+                        ppts: [{ title: 'Functions & Modules', size: '2.6 MB' }],
+                        notes: [{ title: 'Python Functions Reference', desc: 'Scope, namespace, and standard imports' }],
+                        youtube: [
+                            { title: 'Functions & Recursion', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Basic Data structures in Python',
+                        aiSummary: 'Lists, tuples, sets, and dictionaries operations, comprehensions, built-in methods, and structural comparison.',
+                        ppts: [{ title: 'Python Data Structures', size: '3.1 MB' }],
+                        notes: [{ title: 'Lists & Dicts Cheatsheet', desc: 'Common methods and operations' }],
+                        youtube: [
+                            { title: 'Lists, Tuples & Dictionaries', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: File and Exception handling',
+                        aiSummary: 'File operations (read, write, append), file pointers, exceptions, try-except-finally blocks, and custom exceptions.',
+                        ppts: [{ title: 'Files & Exceptions', size: '2.4 MB' }],
+                        notes: [{ title: 'Error Handling Reference', desc: 'Standard exception classes & file modes' }],
+                        youtube: [
+                            { title: 'Exception Handling in Python', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'english-1', key: 'english', title: 'Professional Communication', code: 'AASL0101',
+                units: [
+                    {
+                        title: 'Unit 1: Introduction & Reading Skills',
+                        aiSummary: 'Basics of technical communication, reading speed, comprehension techniques, and vocabulary enhancement.',
+                        ppts: [{ title: 'PC Unit 1 Slides', size: '1.4 MB' }],
+                        notes: [{ title: 'Communication Basics', desc: 'LSRW skills and active reading' }],
+                        youtube: [
+                            { title: 'Professional Communication Intro', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Writing Skills',
+                        aiSummary: 'Sentence structures, paragraph writing, technical descriptions, letters, resumes, and report writing.',
+                        ppts: [{ title: 'Writing Formats PPT', size: '1.8 MB' }],
+                        notes: [{ title: 'Letter & Resume Guide', desc: 'Standard business formats' }],
+                        youtube: [
+                            { title: 'Technical Writing & Resumes', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Listening Skills',
+                        aiSummary: 'Importance of listening, barriers to active listening, note-taking techniques, and audio comprehension.',
+                        ppts: [{ title: 'Listening Skills PPT', size: '1.2 MB' }],
+                        notes: [{ title: 'Active Listening Tips', desc: 'Note-taking structures' }],
+                        youtube: [
+                            { title: 'Active Listening in Communication', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Speaking Skills',
+                        aiSummary: 'Phonetics, stress, intonation, group discussions, public speaking, and body language.',
+                        ppts: [{ title: 'Phonetics & GD PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Speaking Guidelines', desc: 'Body language & GD cheat sheet' }],
+                        youtube: [
+                            { title: 'Speaking & GD Strategies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Public Speaking & Presentation',
+                        aiSummary: 'Design and delivery of formal presentations, handling questions, and stage presence.',
+                        ppts: [{ title: 'Presentation Skills', size: '1.7 MB' }],
+                        notes: [{ title: 'Presentation Cheat Sheet', desc: 'Structure, slide rules & public speaking' }],
+                        youtube: [
+                            { title: 'Mastering Presentations', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        2: [
+            {
+                id: 'math-2', key: 'math', title: 'Engineering Mathematics-II', code: 'AAS0203',
+                units: [
+                    {
+                        title: 'Unit 1: Ordinary Differential Equation of Higher Order',
+                        aiSummary: 'Linear differential equations of n-th order with constant coefficients, complementary functions, particular integrals, and Cauchy-Euler equations.',
+                        ppts: [{ title: 'Differential Equations PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'ODE Cheatsheet', desc: 'P.I. and C.F. shortcut methods' }],
+                        youtube: [
+                            { title: 'Higher Order Linear Differential Equations', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=Ql42qcOLKfo' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Sequences and series',
+                        aiSummary: 'Infinite series convergence, Ratio test, Comparison test, Cauchy\'s root test, Rabee\'s test, and Fourier series representations.',
+                        ppts: [{ title: 'Series Convergence Slides', size: '2.5 MB' }],
+                        notes: [{ title: 'Convergence Tests Reference', desc: 'All test formulas & sessional notes' }],
+                        youtube: [
+                            { title: 'Sequences & Series Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=HUKR4LWrZ14' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Laplace Transform',
+                        aiSummary: 'Laplace transforms properties, transform of derivatives/integrals, inverse Laplace, Dirac delta, and solving linear ODEs.',
+                        ppts: [{ title: 'Laplace Transforms Complete', size: '3.5 MB' }],
+                        notes: [{ title: 'Laplace Formulas Sheet', desc: 'Properties, shifts, and inverse guides' }],
+                        youtube: [
+                            { title: 'Laplace Transform Complete Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/nmp-5tSp-UY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Vector Calculus',
+                        aiSummary: 'Gradient, divergence, curl, line/surface/volume integrals, Green\'s, Gauss divergence, and Stokes\' theorems.',
+                        ppts: [{ title: 'Vector Calculus Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Vector Theorems Solved PYQs', desc: 'Stokes, Gauss, and Green proofs' }],
+                        youtube: [
+                            { title: 'Vector Calculus Revision', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/IwgqKjA6wko' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-II',
+                        aiSummary: 'Aptitude topics: Partnership, problems on ages, mixtures, direction sense, blood relations, and interest.',
+                        ppts: [{ title: 'Aptitude-II PDF', size: '1.8 MB' }],
+                        notes: [{ title: 'Aptitude Hacks & Shortcuts', desc: 'Ages, partnership & direction tricks' }],
+                        youtube: [
+                            { title: 'Aptitude Practice Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'design-1', key: 'default', title: 'Design Thinking-I', code: 'ACSE0203',
+                units: [
+                    {
+                        title: 'Unit 1: Introduction',
+                        aiSummary: 'Basics of design thinking, iterative cycle, empathy mapping, user-centered mindset, and case studies.',
+                        ppts: [{ title: 'Design Thinking Intro', size: '1.8 MB' }],
+                        notes: [{ title: 'Design Cycle Summary', desc: 'Empathize, Define, Ideate, Prototype, Test' }],
+                        youtube: [
+                            { title: 'Design Thinking for Beginners', channel: 'NPTEL', url: 'https://swayam.gov.in/nd1_noc19_mg60/preview' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Ethical Values and Empathy',
+                        aiSummary: 'Role of empathy in user research, ethical guidelines, interviews, observation, and developing user personas.',
+                        ppts: [{ title: 'Empathy & Ethics Slides', size: '2.0 MB' }],
+                        notes: [{ title: 'User Research Guidelines', desc: 'Interview scripts & observation logs' }],
+                        youtube: [
+                            { title: 'Empathy Mapping Techniques', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Problem Statement & Ideation',
+                        aiSummary: 'Defining the problem, POV statement, brainstorming techniques, SCAMPER method, and selecting solutions.',
+                        ppts: [{ title: 'Problem Definition & Ideation', size: '2.4 MB' }],
+                        notes: [{ title: 'Brainstorming Guidelines', desc: 'POV definitions & ideation rules' }],
+                        youtube: [
+                            { title: 'Ideation & Prototyping Basics', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Critical Thinking',
+                        aiSummary: 'Critical thinking fundamentals, evaluating arguments, identifying logical fallacies, and decision models.',
+                        ppts: [{ title: 'Critical Thinking Slides', size: '1.6 MB' }],
+                        notes: [{ title: 'Logical Fallacies Cheat Sheet', desc: 'Types of fallacies with examples' }],
+                        youtube: [
+                            { title: 'Critical Thinking & Fallacies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Logic and Argumentation',
+                        aiSummary: 'Propositional logic, syllogisms, forming valid arguments, and group exercises in structural debate.',
+                        ppts: [{ title: 'Logic & Arguments PPT', size: '2.2 MB' }],
+                        notes: [{ title: 'Deductive vs Inductive Logic', desc: 'Valid argument forms cheatsheet' }],
+                        youtube: [
+                            { title: 'Formal Logic & Syllogisms', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'physics-1', key: 'physics', title: 'Engineering Physics', code: 'AAS0201A',
+                units: [
+                    {
+                        title: 'Unit 1: Relativistic Mechanics',
+                        aiSummary: 'Frame of reference, Michelson-Morley experiment, Galilean transformations, Lorentz transformations, length contraction, time dilation, and E=mc^2.',
+                        ppts: [{ title: 'Relativity Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Relativistic Derivations', desc: 'Time dilation & mass-energy relation proofs' }],
+                        youtube: [
+                            { title: 'Relativity Complete Lecture', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Quantum Mechanics',
                         aiSummary: 'De-Broglie hypothesis, wave-particle duality, Heisenberg uncertainty principle. Schrodinger wave equation (time-dependent and time-independent), wave function physical significance, particle in a 1D box. Practice energy level derivations.',
                         ppts: [{ title: 'Quantum Mechanics Slides', size: '4.0 MB' }],
                         notes: [{ title: 'Quantum Physics Formula Guide', desc: 'Solved 1D box derivations' }],
@@ -140,7 +379,25 @@ export const semesters = {
                         ]
                     },
                     {
-                        title: 'Unit 4: Lasers & Fiber Optics',
+                        title: 'Unit 3: Wave Optics',
+                        aiSummary: 'Interference: Young\'s double-slit experiment, Newton\'s rings, thin film interference. Diffraction: Fresnel vs Fraunhofer, single slit diffraction pattern. Polarization: Brewster\'s law, Malus law, double refraction. Key formulas: fringe width = λD/d, resolving power of grating = nN.',
+                        ppts: [{ title: 'Wave Optics Lecture', size: '2.1 MB' }],
+                        notes: [{ title: 'Optics Quick Notes', desc: 'Derivations and numericals' }],
+                        youtube: [
+                            { title: 'Wave Optics Complete', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Physics and Information Storage',
+                        aiSummary: 'Energy bands, intrinsic & extrinsic semiconductors, Fermi level, carrier concentration, Hall effect, and basic magnetic memory storage systems.',
+                        ppts: [{ title: 'Semiconductor Devices PPT', size: '2.8 MB' }],
+                        notes: [{ title: 'Carrier Concentration & Fermi Level', desc: 'Equations and Hall effect calculations' }],
+                        youtube: [
+                            { title: 'Semiconductors in Physics', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=h6sXoB2eIig' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Fiber Optics & Laser',
                         aiSummary: 'Laser: Spontaneous and stimulated emission, Einstein\'s coefficients, population inversion, Ruby laser, He-Ne laser. Fiber Optics: Principle of propagation, acceptance angle, numerical aperture, fractional refractive index change, single/multi-mode fibers. Tip: Numerical questions are highly common from numerical aperture.',
                         ppts: [{ title: 'Lasers & Fiber Optics PPT', size: '2.9 MB' }],
                         notes: [{ title: 'Fiber Optics Cheat Sheet', desc: 'Formulas and step-by-step solved numerics' }],
@@ -151,33 +408,55 @@ export const semesters = {
                 ]
             },
             {
-                id: 'english-1', key: 'english', title: 'Technical Communication', code: 'KAS103',
+                id: 'python-2', key: 'java', title: 'Problem Solving using Advanced Python', code: 'ACSE0202',
                 units: [
                     {
-                        title: 'Unit 1: Communication Skills',
-                        aiSummary: 'Technical communication involves precise, clear, and structured writing. Key areas: report writing, presentation skills, business correspondence, grammar essentials. Focus on active voice, conciseness, and audience analysis.',
-                        ppts: [{ title: 'Communication Skills PPT', size: '1.5 MB' }],
-                        notes: [{ title: 'Grammar Quick Reference', desc: 'Common errors & business letter formats' }],
+                        title: 'Unit 1: Classes and Objects',
+                        aiSummary: 'OOP fundamentals in Python: defining classes, instantiating objects, constructor methods (__init__), class vs instance attributes, and method types.',
+                        ppts: [{ title: 'Classes & Objects Slides', size: '2.3 MB' }],
+                        notes: [{ title: 'Python OOP Cheatsheet', desc: 'Syntax for classes, objects, and attributes' }],
                         youtube: [
-                            { title: 'Technical Communication', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }
+                            { title: 'Python Classes and Objects', channel: 'Telusko', url: 'https://nptel.ac.in/courses/106/106/106106145/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Object Oriented Concepts',
+                        aiSummary: 'Inheritance, method overriding, super() function, polymorphism, encapsulation, private attributes, operator overloading, and special methods (__str__, __len__).',
+                        ppts: [{ title: 'OOP Core Concepts', size: '2.7 MB' }],
+                        notes: [{ title: 'Polymorphism & Inheritance', desc: 'Overriding and multiple inheritance rules' }],
+                        youtube: [
+                            { title: 'Python OOP Inheritance', channel: 'Python Course', url: 'https://www.python-course.eu/python3_inheritance.php' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Functional Programming',
+                        aiSummary: 'Functional concepts in Python: map(), filter(), reduce() functions, list/dictionary comprehensions, generators, and iterators.',
+                        ppts: [{ title: 'Functional Programming PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Functional Python Cheatsheet', desc: 'Lambda, mapping, and list comprehension tips' }],
+                        youtube: [
+                            { title: 'Functional Python Programming', channel: 'Real Python', url: 'https://realpython.com/courses/functional-programming-python/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: GUI Programming',
+                        aiSummary: 'GUI development in Python using Tkinter: creating windows, widgets (Labels, Buttons, Entries), layouts (Pack, Grid), and event handling.',
+                        ppts: [{ title: 'Tkinter GUI Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Tkinter Widgets Reference', desc: 'GUI element grids and event bindings' }],
+                        youtube: [
+                            { title: 'Python Tkinter GUI Tutorial', channel: 'Real Python', url: 'https://realpython.com/python-gui-tkinter/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Libraries in Python',
+                        aiSummary: 'Intro to NumPy, Pandas, and Matplotlib libraries for data manipulation and visualization.',
+                        ppts: [{ title: 'Python Libraries PPT', size: '3.8 MB' }],
+                        notes: [{ title: 'Data Analytics Cheatsheet', desc: 'Numpy arrays and Pandas dataframe basics' }],
+                        youtube: [
+                            { title: 'NumPy, Pandas & Matplotlib Course', channel: 'NPTEL', url: 'https://nptel.ac.in/courses/106/107/106107220/' }
                         ]
                     }
                 ]
             }
-        ],
-        2: [
-          {
-            id: 'math-2', key: 'math', title: 'Engineering Mathematics II', code: 'KAS201',
-            units: [
-                {
-                    title: 'Unit 1: Fourier Series',
-                    aiSummary: 'Fourier series for periodic functions, Dirichlet conditions, Half-range expansions, Parseval\'s identity. Essential for signal analysis and wave equations.',
-                    ppts: [{ title: 'Fourier Series', size: '2.5 MB' }],
-                    notes: [{ title: 'Fourier Notes', desc: 'Key theorems and solved problems' }],
-                    youtube: [{ title: 'Fourier Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtube.com' }]
-                }
-            ]
-          }
         ],
         3: [
           {
@@ -341,37 +620,416 @@ export const semesters = {
     'ece': {
         1: [
             {
-                id: 'ece-math-1', key: 'math', title: 'Engineering Mathematics I', code: 'KAS101',
+                id: 'math-1', key: 'math', title: 'Engineering Mathematics-I', code: 'AAS0103',
                 units: [
-                    { title: 'Unit 1: Matrices & Determinants', aiSummary: 'Types of matrices, rank, Cayley-Hamilton theorem, eigenvalues and eigenvectors. Essential for circuit analysis and signal processing.', ppts: [{ title: 'Matrices Lecture', size: '3.2 MB' }], notes: [{ title: 'Matrix Formulas', desc: 'All key formulas' }], youtube: [{ title: 'Matrices Complete', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }] },
-                    { title: 'Unit 2: Differential Calculus', aiSummary: 'Successive differentiation, Taylor series, Maclaurin series, partial derivatives and their applications.', ppts: [{ title: 'Calculus Slides', size: '2.8 MB' }], notes: [{ title: 'Calculus Formulas', desc: 'Differentiation rules' }], youtube: [{ title: 'Calculus in One Shot', channel: 'Anurag Chauhan', url: 'https://www.youtube.com/watch?v=HfACrKJ_Y2w' }] }
+                    {
+                        title: 'Unit 1: Matrices',
+                        aiSummary: 'Matrices are rectangular arrays of numbers. Key Topics: Types of matrices (symmetric, skew-symmetric, orthogonal), Rank of a matrix using echelon form, Cayley-Hamilton theorem for finding inverse, Eigenvalues and Eigenvectors — essential for stability analysis. Important: Practice characteristic equations and diagonalization.',
+                        ppts: [{ title: 'Matrices Complete Lecture', size: '3.2 MB' }],
+                        notes: [{ title: 'Quick Revision - Matrices', desc: 'All formulas & solved examples' }],
+                        youtube: [
+                            { title: 'Matrices & Determinants Complete Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' },
+                            { title: 'Eigenvalues and Eigenvectors', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=PFDu9oVAE-g' },
+                            { title: 'Cayley-Hamilton Theorem - Proof & Problems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' },
+                            { title: 'Diagonalization of a Matrix', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Differential Calculus-I',
+                        aiSummary: 'Covers successive differentiation, Leibniz theorem, Rolle\'s theorem, Mean Value theorems (Lagrange & Cauchy), Taylor and Maclaurin series expansions. Tip: Master the expansion formulas — they appear every exam.',
+                        ppts: [{ title: 'Differential Calculus Slides', size: '2.8 MB' }],
+                        notes: [{ title: 'Formulas Sheet - Calculus', desc: 'All differentiation rules + solved PYQs' }],
+                        youtube: [
+                            { title: 'Leibniz Theorem - Successive Differentiation', channel: 'Bhagwan Singh Vishwakarma', url: 'https://www.youtube.com/watch?v=Zc2l2U9V620' },
+                            { title: 'Taylor\'s & Maclaurin\'s Series Expansion', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=R9Ym08c8KCc' },
+                            { title: 'Rolle\'s & Mean Value Theorems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=vV68Q7-nQ1Y' },
+                            { title: 'Jacobian & Partial Differentiation', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Differential Calculus-II',
+                        aiSummary: 'Focuses on partial differentiation, Euler\'s theorem on homogeneous functions, total derivatives, and Taylor\'s theorem for two variables.',
+                        ppts: [{ title: 'Calculus-II PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'Calculus-II Revision Sheet', desc: 'Euler\'s theorem & partial derivatives' }],
+                        youtube: [
+                            { title: 'Euler\'s Theorem Homogeneous Functions', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' },
+                            { title: 'Total Differentiation & Chain Rule', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q4c33f2T-8g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Multivariable Calculus',
+                        aiSummary: 'Covers double and triple integrals, change of order of integration, coordinate transformations (Polar/Spherical/Cylindrical) using Jacobians, and Dirichlet\'s integrals.',
+                        ppts: [{ title: 'Multivariable Calculus PPT', size: '4.5 MB' }],
+                        notes: [{ title: 'Integrals Cheatsheet', desc: 'Double/triple integrals & area/volume' }],
+                        youtube: [
+                            { title: 'Double Integrals Concepts', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=3M6Z6Qj023w' },
+                            { title: 'Change of Order of Integration', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=xH6S3nQvM5E' },
+                            { title: 'Dirichlet\'s Theorem & Triple Integrals', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=48_S69sXU_A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-I',
+                        aiSummary: 'Quantitative aptitude concepts: Number systems, Profit & Loss, Percentage, Simple and Compound Interest, and Ratio & Proportion.',
+                        ppts: [{ title: 'Aptitude-I PDF', size: '1.9 MB' }],
+                        notes: [{ title: 'Aptitude Formulas Sheet', desc: 'Shortcuts and speed math tricks' }],
+                        youtube: [
+                            { title: 'Quantitative Aptitude Complete Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' },
+                            { title: 'Profit, Loss & Discount Tricks', channel: 'Feel Free to Learn', url: 'https://www.youtube.com/watch?v=jiEaKYI0ATY' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ece-physics-1', key: 'physics', title: 'Engineering Physics', code: 'KAS102',
+                id: 'bee-1', key: 'bee', title: 'Basic Electrical and Electronics Engineering', code: 'AEC0101',
                 units: [
-                    { title: 'Unit 1: Wave Optics & Lasers', aiSummary: 'Interference, diffraction, polarization. Lasers: stimulated emission, He-Ne and semiconductor lasers. Fiber optics and applications.', ppts: [{ title: 'Optics & Lasers', size: '2.1 MB' }], notes: [{ title: 'Optics Notes', desc: 'Derivations and formulas' }], youtube: [{ title: 'Wave Optics', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }] },
-                    { title: 'Unit 2: Semiconductor Physics', aiSummary: 'Energy bands, intrinsic and extrinsic semiconductors, Hall effect, p-n junction physics. Foundation for electronic devices.', ppts: [{ title: 'Semiconductor Physics', size: '2.4 MB' }], notes: [{ title: 'Semiconductor Notes', desc: 'Band theory and devices' }], youtube: [{ title: 'Semiconductor Basics', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=pPnIajJ1bUc' }] }
+                    {
+                        title: 'Unit 1: D.C Circuit Analysis and Network Theorems',
+                        aiSummary: 'Covers active & passive elements, sources, Kirchhoff\'s laws, nodal & loop analysis, Superposition, Thevenin\'s, Norton\'s, and Maximum Power Transfer theorems.',
+                        ppts: [{ title: 'DC Circuit Basics', size: '2.5 MB' }],
+                        notes: [{ title: 'Circuit Theorems Guide', desc: 'Solved mesh/nodal analysis problems' }],
+                        youtube: [
+                            { title: 'Kirchhoff\'s Laws & Nodal Analysis', channel: 'Gate Smashers', url: 'https://youtu.be/FjaJEo7knF4' },
+                            { title: 'Thevenin\'s & Superposition Theorems', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Steady State Analysis of AC Circuit',
+                        aiSummary: 'AC fundamentals, phasors, RLC series & parallel circuits, resonance, and three-phase balanced star/delta connections.',
+                        ppts: [{ title: 'AC Analysis Slides', size: '3.0 MB' }],
+                        notes: [{ title: 'AC Formulas & Phasor Diagrams', desc: 'Power factor and RLC relations' }],
+                        youtube: [
+                            { title: 'Single Phase AC Circuits', channel: 'Gate Smashers', url: 'https://youtu.be/ulGKCeOoR88' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Single Phase Transformer & Power Systems',
+                        aiSummary: 'Transformer operating principle, EMF equation, equivalent circuit, losses, efficiency. Basics of MCB, ELCB, and earthing.',
+                        ppts: [{ title: 'Transformer & Power Systems', size: '3.4 MB' }],
+                        notes: [{ title: 'Transformer Derivations', desc: 'Equivalent circuit and sessional notes' }],
+                        youtube: [
+                            { title: 'Single Phase Transformer EMF Equation', channel: 'Neso Academy', url: 'https://youtu.be/GgckE4H5AJE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Diode and Their Applications',
+                        aiSummary: 'PN junction diode properties, rectifiers, clippers, clampers, Zener diode regulator, LEDs, and basic display devices.',
+                        ppts: [{ title: 'Semiconductor Diode PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Diode Circuit Cheat Sheet', desc: 'Full-wave/half-wave rectifier formulas' }],
+                        youtube: [
+                            { title: 'PN Junction Diode & Rectifiers', channel: 'Neso Academy', url: 'https://youtu.be/EdUAecpYVWQ' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Operational Amplifiers & Op-Amp Applications',
+                        aiSummary: 'Op-amp characteristics, inverting/non-inverting configuration, summing amplifier, integrator, differentiator, sensors, and IoT introduction.',
+                        ppts: [{ title: 'Op-Amps & IoT', size: '3.1 MB' }],
+                        notes: [{ title: 'Op-Amp Solved Circuits', desc: 'Ideal op-amp properties and formulas' }],
+                        youtube: [
+                            { title: 'Introduction to Operational Amplifiers', channel: 'Neso Academy', url: 'https://youtu.be/AuZ00cQ0UrE' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ece-english-1', key: 'english', title: 'Technical Communication', code: 'KAS103',
+                id: 'python-1', key: 'java', title: 'Problem Solving using Python', code: 'ACSE0101',
                 units: [
-                    { title: 'Unit 1: Communication Skills', aiSummary: 'Technical communication, report writing, presentation skills, business correspondence, grammar essentials.', ppts: [{ title: 'Communication PPT', size: '1.5 MB' }], notes: [{ title: 'Grammar Reference', desc: 'Business letter formats' }], youtube: [{ title: 'Technical Communication', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }] }
+                    {
+                        title: 'Unit 1: Basics of python programming',
+                        aiSummary: 'Introduction to python environment, variables, data types, standard input/output, operators, and basic expression evaluation.',
+                        ppts: [{ title: 'Python Basics PPT', size: '2.0 MB' }],
+                        notes: [{ title: 'Python Syntax Cheatsheet', desc: 'Variables, operators & formatting' }],
+                        youtube: [
+                            { title: 'Python Programming Course', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=aqvDMCY516A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Decision Control Statements',
+                        aiSummary: 'Flow control, conditional branching (if, if-else, elif), loops (while, for), break, continue, and pass control statements.',
+                        ppts: [{ title: 'Control Statements Slides', size: '2.2 MB' }],
+                        notes: [{ title: 'Conditional Statements Guide', desc: 'Nested loops and branching examples' }],
+                        youtube: [
+                            { title: 'Loops & Conditionals in Python', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Function and Modules',
+                        aiSummary: 'Defining functions, argument passing, return values, scope of variables, recursion, lambda functions, and modules/packages creation.',
+                        ppts: [{ title: 'Functions & Modules', size: '2.6 MB' }],
+                        notes: [{ title: 'Python Functions Reference', desc: 'Scope, namespace, and standard imports' }],
+                        youtube: [
+                            { title: 'Functions & Recursion', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Basic Data structures in Python',
+                        aiSummary: 'Lists, tuples, sets, and dictionaries operations, comprehensions, built-in methods, and structural comparison.',
+                        ppts: [{ title: 'Python Data Structures', size: '3.1 MB' }],
+                        notes: [{ title: 'Lists & Dicts Cheatsheet', desc: 'Common methods and operations' }],
+                        youtube: [
+                            { title: 'Lists, Tuples & Dictionaries', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: File and Exception handling',
+                        aiSummary: 'File operations (read, write, append), file pointers, exceptions, try-except-finally blocks, and custom exceptions.',
+                        ppts: [{ title: 'Files & Exceptions', size: '2.4 MB' }],
+                        notes: [{ title: 'Error Handling Reference', desc: 'Standard exception classes & file modes' }],
+                        youtube: [
+                            { title: 'Exception Handling in Python', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'english-1', key: 'english', title: 'Professional Communication', code: 'AASL0101',
+                units: [
+                    {
+                        title: 'Unit 1: Introduction & Reading Skills',
+                        aiSummary: 'Basics of technical communication, reading speed, comprehension techniques, and vocabulary enhancement.',
+                        ppts: [{ title: 'PC Unit 1 Slides', size: '1.4 MB' }],
+                        notes: [{ title: 'Communication Basics', desc: 'LSRW skills and active reading' }],
+                        youtube: [
+                            { title: 'Professional Communication Intro', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Writing Skills',
+                        aiSummary: 'Sentence structures, paragraph writing, technical descriptions, letters, resumes, and report writing.',
+                        ppts: [{ title: 'Writing Formats PPT', size: '1.8 MB' }],
+                        notes: [{ title: 'Letter & Resume Guide', desc: 'Standard business formats' }],
+                        youtube: [
+                            { title: 'Technical Writing & Resumes', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Listening Skills',
+                        aiSummary: 'Importance of listening, barriers to active listening, note-taking techniques, and audio comprehension.',
+                        ppts: [{ title: 'Listening Skills PPT', size: '1.2 MB' }],
+                        notes: [{ title: 'Active Listening Tips', desc: 'Note-taking structures' }],
+                        youtube: [
+                            { title: 'Active Listening in Communication', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Speaking Skills',
+                        aiSummary: 'Phonetics, stress, intonation, group discussions, public speaking, and body language.',
+                        ppts: [{ title: 'Phonetics & GD PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Speaking Guidelines', desc: 'Body language & GD cheat sheet' }],
+                        youtube: [
+                            { title: 'Speaking & GD Strategies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Public Speaking & Presentation',
+                        aiSummary: 'Design and delivery of formal presentations, handling questions, and stage presence.',
+                        ppts: [{ title: 'Presentation Skills', size: '1.7 MB' }],
+                        notes: [{ title: 'Presentation Cheat Sheet', desc: 'Structure, slide rules & public speaking' }],
+                        youtube: [
+                            { title: 'Mastering Presentations', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
                 ]
             }
         ],
         2: [
             {
-                id: 'ece-math-2', key: 'math', title: 'Engineering Mathematics II', code: 'KAS201',
+                id: 'math-2', key: 'math', title: 'Engineering Mathematics-II', code: 'AAS0203',
                 units: [
-                    { title: 'Unit 1: Fourier Series & Transforms', aiSummary: 'Fourier series for periodic functions, Fourier transforms, Laplace transforms and their applications in signal analysis.', ppts: [{ title: 'Fourier Analysis', size: '2.5 MB' }], notes: [{ title: 'Transform Pairs', desc: 'Key transform formulas' }], youtube: [{ title: 'Fourier Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Ordinary Differential Equation of Higher Order',
+                        aiSummary: 'Linear differential equations of n-th order with constant coefficients, complementary functions, particular integrals, and Cauchy-Euler equations.',
+                        ppts: [{ title: 'Differential Equations PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'ODE Cheatsheet', desc: 'P.I. and C.F. shortcut methods' }],
+                        youtube: [
+                            { title: 'Higher Order Linear Differential Equations', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=Ql42qcOLKfo' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Sequences and series',
+                        aiSummary: 'Infinite series convergence, Ratio test, Comparison test, Cauchy\'s root test, Rabee\'s test, and Fourier series representations.',
+                        ppts: [{ title: 'Series Convergence Slides', size: '2.5 MB' }],
+                        notes: [{ title: 'Convergence Tests Reference', desc: 'All test formulas & sessional notes' }],
+                        youtube: [
+                            { title: 'Sequences & Series Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=HUKR4LWrZ14' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Laplace Transform',
+                        aiSummary: 'Laplace transforms properties, transform of derivatives/integrals, inverse Laplace, Dirac delta, and solving linear ODEs.',
+                        ppts: [{ title: 'Laplace Transforms Complete', size: '3.5 MB' }],
+                        notes: [{ title: 'Laplace Formulas Sheet', desc: 'Properties, shifts, and inverse guides' }],
+                        youtube: [
+                            { title: 'Laplace Transform Complete Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/nmp-5tSp-UY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Vector Calculus',
+                        aiSummary: 'Gradient, divergence, curl, line/surface/volume integrals, Green\'s, Gauss divergence, and Stokes\' theorems.',
+                        ppts: [{ title: 'Vector Calculus Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Vector Theorems Solved PYQs', desc: 'Stokes, Gauss, and Green proofs' }],
+                        youtube: [
+                            { title: 'Vector Calculus Revision', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/IwgqKjA6wko' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-II',
+                        aiSummary: 'Aptitude topics: Partnership, problems on ages, mixtures, direction sense, blood relations, and interest.',
+                        ppts: [{ title: 'Aptitude-II PDF', size: '1.8 MB' }],
+                        notes: [{ title: 'Aptitude Hacks & Shortcuts', desc: 'Ages, partnership & direction tricks' }],
+                        youtube: [
+                            { title: 'Aptitude Practice Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ece-bee-1', key: 'bee', title: 'Basic Electrical Engineering', code: 'KEE201',
+                id: 'design-1', key: 'default', title: 'Design Thinking-I', code: 'ACSE0203',
                 units: [
-                    { title: 'Unit 1: DC Circuits', aiSummary: 'Ohm\'s law, Kirchhoff\'s laws, mesh and nodal analysis, Thevenin\'s and Norton\'s theorems, superposition principle.', ppts: [{ title: 'DC Circuit Analysis', size: '3.0 MB' }], notes: [{ title: 'Circuit Theorems', desc: 'All key theorems with examples' }], youtube: [{ title: 'Basic Electrical', channel: 'Neso Academy', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Introduction',
+                        aiSummary: 'Basics of design thinking, iterative cycle, empathy mapping, user-centered mindset, and case studies.',
+                        ppts: [{ title: 'Design Thinking Intro', size: '1.8 MB' }],
+                        notes: [{ title: 'Design Cycle Summary', desc: 'Empathize, Define, Ideate, Prototype, Test' }],
+                        youtube: [
+                            { title: 'Design Thinking for Beginners', channel: 'NPTEL', url: 'https://swayam.gov.in/nd1_noc19_mg60/preview' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Ethical Values and Empathy',
+                        aiSummary: 'Role of empathy in user research, ethical guidelines, interviews, observation, and developing user personas.',
+                        ppts: [{ title: 'Empathy & Ethics Slides', size: '2.0 MB' }],
+                        notes: [{ title: 'User Research Guidelines', desc: 'Interview scripts & observation logs' }],
+                        youtube: [
+                            { title: 'Empathy Mapping Techniques', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Problem Statement & Ideation',
+                        aiSummary: 'Defining the problem, POV statement, brainstorming techniques, SCAMPER method, and selecting solutions.',
+                        ppts: [{ title: 'Problem Definition & Ideation', size: '2.4 MB' }],
+                        notes: [{ title: 'Brainstorming Guidelines', desc: 'POV definitions & ideation rules' }],
+                        youtube: [
+                            { title: 'Ideation & Prototyping Basics', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Critical Thinking',
+                        aiSummary: 'Critical thinking fundamentals, evaluating arguments, identifying logical fallacies, and decision models.',
+                        ppts: [{ title: 'Critical Thinking Slides', size: '1.6 MB' }],
+                        notes: [{ title: 'Logical Fallacies Cheat Sheet', desc: 'Types of fallacies with examples' }],
+                        youtube: [
+                            { title: 'Critical Thinking & Fallacies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Logic and Argumentation',
+                        aiSummary: 'Propositional logic, syllogisms, forming valid arguments, and group exercises in structural debate.',
+                        ppts: [{ title: 'Logic & Arguments PPT', size: '2.2 MB' }],
+                        notes: [{ title: 'Deductive vs Inductive Logic', desc: 'Valid argument forms cheatsheet' }],
+                        youtube: [
+                            { title: 'Formal Logic & Syllogisms', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'physics-1', key: 'physics', title: 'Engineering Physics', code: 'AAS0201A',
+                units: [
+                    {
+                        title: 'Unit 1: Relativistic Mechanics',
+                        aiSummary: 'Frame of reference, Michelson-Morley experiment, Galilean transformations, Lorentz transformations, length contraction, time dilation, and E=mc^2.',
+                        ppts: [{ title: 'Relativity Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Relativistic Derivations', desc: 'Time dilation & mass-energy relation proofs' }],
+                        youtube: [
+                            { title: 'Relativity Complete Lecture', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Quantum Mechanics',
+                        aiSummary: 'De-Broglie hypothesis, wave-particle duality, Heisenberg uncertainty principle. Schrodinger wave equation (time-dependent and time-independent), wave function physical significance, particle in a 1D box. Practice energy level derivations.',
+                        ppts: [{ title: 'Quantum Mechanics Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Quantum Physics Formula Guide', desc: 'Solved 1D box derivations' }],
+                        youtube: [
+                            { title: 'Quantum Mechanics Playlist', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Wave Optics',
+                        aiSummary: 'Interference: Young\'s double-slit experiment, Newton\'s rings, thin film interference. Diffraction: Fresnel vs Fraunhofer, single slit diffraction pattern. Polarization: Brewster\'s law, Malus law, double refraction. Key formulas: fringe width = λD/d, resolving power of grating = nN.',
+                        ppts: [{ title: 'Wave Optics Lecture', size: '2.1 MB' }],
+                        notes: [{ title: 'Optics Quick Notes', desc: 'Derivations and numericals' }],
+                        youtube: [
+                            { title: 'Wave Optics Complete', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Physics and Information Storage',
+                        aiSummary: 'Energy bands, intrinsic & extrinsic semiconductors, Fermi level, carrier concentration, Hall effect, and basic magnetic memory storage systems.',
+                        ppts: [{ title: 'Semiconductor Devices PPT', size: '2.8 MB' }],
+                        notes: [{ title: 'Carrier Concentration & Fermi Level', desc: 'Equations and Hall effect calculations' }],
+                        youtube: [
+                            { title: 'Semiconductors in Physics', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=h6sXoB2eIig' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Fiber Optics & Laser',
+                        aiSummary: 'Laser: Spontaneous and stimulated emission, Einstein\'s coefficients, population inversion, Ruby laser, He-Ne laser. Fiber Optics: Principle of propagation, acceptance angle, numerical aperture, fractional refractive index change, single/multi-mode fibers. Tip: Numerical questions are highly common from numerical aperture.',
+                        ppts: [{ title: 'Lasers & Fiber Optics PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Fiber Optics Cheat Sheet', desc: 'Formulas and step-by-step solved numerics' }],
+                        youtube: [
+                            { title: 'Lasers & Fiber Optics course', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=u8-FidK7zV8' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'python-2', key: 'java', title: 'Problem Solving using Advanced Python', code: 'ACSE0202',
+                units: [
+                    {
+                        title: 'Unit 1: Classes and Objects',
+                        aiSummary: 'OOP fundamentals in Python: defining classes, instantiating objects, constructor methods (__init__), class vs instance attributes, and method types.',
+                        ppts: [{ title: 'Classes & Objects Slides', size: '2.3 MB' }],
+                        notes: [{ title: 'Python OOP Cheatsheet', desc: 'Syntax for classes, objects, and attributes' }],
+                        youtube: [
+                            { title: 'Python Classes and Objects', channel: 'Telusko', url: 'https://nptel.ac.in/courses/106/106/106106145/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Object Oriented Concepts',
+                        aiSummary: 'Inheritance, method overriding, super() function, polymorphism, encapsulation, private attributes, operator overloading, and special methods (__str__, __len__).',
+                        ppts: [{ title: 'OOP Core Concepts', size: '2.7 MB' }],
+                        notes: [{ title: 'Polymorphism & Inheritance', desc: 'Overriding and multiple inheritance rules' }],
+                        youtube: [
+                            { title: 'Python OOP Inheritance', channel: 'Python Course', url: 'https://www.python-course.eu/python3_inheritance.php' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Functional Programming',
+                        aiSummary: 'Functional concepts in Python: map(), filter(), reduce() functions, list/dictionary comprehensions, generators, and iterators.',
+                        ppts: [{ title: 'Functional Programming PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Functional Python Cheatsheet', desc: 'Lambda, mapping, and list comprehension tips' }],
+                        youtube: [
+                            { title: 'Functional Python Programming', channel: 'Real Python', url: 'https://realpython.com/courses/functional-programming-python/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: GUI Programming',
+                        aiSummary: 'GUI development in Python using Tkinter: creating windows, widgets (Labels, Buttons, Entries), layouts (Pack, Grid), and event handling.',
+                        ppts: [{ title: 'Tkinter GUI Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Tkinter Widgets Reference', desc: 'GUI element grids and event bindings' }],
+                        youtube: [
+                            { title: 'Python Tkinter GUI Tutorial', channel: 'Real Python', url: 'https://realpython.com/python-gui-tkinter/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Libraries in Python',
+                        aiSummary: 'Intro to NumPy, Pandas, and Matplotlib libraries for data manipulation and visualization.',
+                        ppts: [{ title: 'Python Libraries PPT', size: '3.8 MB' }],
+                        notes: [{ title: 'Data Analytics Cheatsheet', desc: 'Numpy arrays and Pandas dataframe basics' }],
+                        youtube: [
+                            { title: 'NumPy, Pandas & Matplotlib Course', channel: 'NPTEL', url: 'https://nptel.ac.in/courses/106/107/106107220/' }
+                        ]
+                    }
                 ]
             }
         ],
@@ -414,35 +1072,416 @@ export const semesters = {
     'me': {
         1: [
             {
-                id: 'me-math-1', key: 'math', title: 'Engineering Mathematics I', code: 'KAS101',
+                id: 'math-1', key: 'math', title: 'Engineering Mathematics-I', code: 'AAS0103',
                 units: [
-                    { title: 'Unit 1: Matrices & Differential Calculus', aiSummary: 'Matrix operations, eigenvalues, successive differentiation, Taylor series. Foundation for engineering analysis.', ppts: [{ title: 'Math Lecture', size: '3.2 MB' }], notes: [{ title: 'Math Formulas', desc: 'Key formulas' }], youtube: [{ title: 'Engineering Math', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }] }
+                    {
+                        title: 'Unit 1: Matrices',
+                        aiSummary: 'Matrices are rectangular arrays of numbers. Key Topics: Types of matrices (symmetric, skew-symmetric, orthogonal), Rank of a matrix using echelon form, Cayley-Hamilton theorem for finding inverse, Eigenvalues and Eigenvectors — essential for stability analysis. Important: Practice characteristic equations and diagonalization.',
+                        ppts: [{ title: 'Matrices Complete Lecture', size: '3.2 MB' }],
+                        notes: [{ title: 'Quick Revision - Matrices', desc: 'All formulas & solved examples' }],
+                        youtube: [
+                            { title: 'Matrices & Determinants Complete Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' },
+                            { title: 'Eigenvalues and Eigenvectors', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=PFDu9oVAE-g' },
+                            { title: 'Cayley-Hamilton Theorem - Proof & Problems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' },
+                            { title: 'Diagonalization of a Matrix', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Differential Calculus-I',
+                        aiSummary: 'Covers successive differentiation, Leibniz theorem, Rolle\'s theorem, Mean Value theorems (Lagrange & Cauchy), Taylor and Maclaurin series expansions. Tip: Master the expansion formulas — they appear every exam.',
+                        ppts: [{ title: 'Differential Calculus Slides', size: '2.8 MB' }],
+                        notes: [{ title: 'Formulas Sheet - Calculus', desc: 'All differentiation rules + solved PYQs' }],
+                        youtube: [
+                            { title: 'Leibniz Theorem - Successive Differentiation', channel: 'Bhagwan Singh Vishwakarma', url: 'https://www.youtube.com/watch?v=Zc2l2U9V620' },
+                            { title: 'Taylor\'s & Maclaurin\'s Series Expansion', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=R9Ym08c8KCc' },
+                            { title: 'Rolle\'s & Mean Value Theorems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=vV68Q7-nQ1Y' },
+                            { title: 'Jacobian & Partial Differentiation', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Differential Calculus-II',
+                        aiSummary: 'Focuses on partial differentiation, Euler\'s theorem on homogeneous functions, total derivatives, and Taylor\'s theorem for two variables.',
+                        ppts: [{ title: 'Calculus-II PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'Calculus-II Revision Sheet', desc: 'Euler\'s theorem & partial derivatives' }],
+                        youtube: [
+                            { title: 'Euler\'s Theorem Homogeneous Functions', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' },
+                            { title: 'Total Differentiation & Chain Rule', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q4c33f2T-8g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Multivariable Calculus',
+                        aiSummary: 'Covers double and triple integrals, change of order of integration, coordinate transformations (Polar/Spherical/Cylindrical) using Jacobians, and Dirichlet\'s integrals.',
+                        ppts: [{ title: 'Multivariable Calculus PPT', size: '4.5 MB' }],
+                        notes: [{ title: 'Integrals Cheatsheet', desc: 'Double/triple integrals & area/volume' }],
+                        youtube: [
+                            { title: 'Double Integrals Concepts', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=3M6Z6Qj023w' },
+                            { title: 'Change of Order of Integration', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=xH6S3nQvM5E' },
+                            { title: 'Dirichlet\'s Theorem & Triple Integrals', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=48_S69sXU_A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-I',
+                        aiSummary: 'Quantitative aptitude concepts: Number systems, Profit & Loss, Percentage, Simple and Compound Interest, and Ratio & Proportion.',
+                        ppts: [{ title: 'Aptitude-I PDF', size: '1.9 MB' }],
+                        notes: [{ title: 'Aptitude Formulas Sheet', desc: 'Shortcuts and speed math tricks' }],
+                        youtube: [
+                            { title: 'Quantitative Aptitude Complete Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' },
+                            { title: 'Profit, Loss & Discount Tricks', channel: 'Feel Free to Learn', url: 'https://www.youtube.com/watch?v=jiEaKYI0ATY' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'me-physics-1', key: 'physics', title: 'Engineering Physics', code: 'KAS102',
+                id: 'bee-1', key: 'bee', title: 'Basic Electrical and Electronics Engineering', code: 'AEC0101',
                 units: [
-                    { title: 'Unit 1: Wave Mechanics & Thermodynamics', aiSummary: 'Oscillations, wave motion, laws of thermodynamics, entropy, heat engines. Direct application in mechanical engineering.', ppts: [{ title: 'Physics Lecture', size: '2.1 MB' }], notes: [{ title: 'Thermo Notes', desc: 'Laws and equations' }], youtube: [{ title: 'Engineering Physics', channel: 'Physics Wallah', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: D.C Circuit Analysis and Network Theorems',
+                        aiSummary: 'Covers active & passive elements, sources, Kirchhoff\'s laws, nodal & loop analysis, Superposition, Thevenin\'s, Norton\'s, and Maximum Power Transfer theorems.',
+                        ppts: [{ title: 'DC Circuit Basics', size: '2.5 MB' }],
+                        notes: [{ title: 'Circuit Theorems Guide', desc: 'Solved mesh/nodal analysis problems' }],
+                        youtube: [
+                            { title: 'Kirchhoff\'s Laws & Nodal Analysis', channel: 'Gate Smashers', url: 'https://youtu.be/FjaJEo7knF4' },
+                            { title: 'Thevenin\'s & Superposition Theorems', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Steady State Analysis of AC Circuit',
+                        aiSummary: 'AC fundamentals, phasors, RLC series & parallel circuits, resonance, and three-phase balanced star/delta connections.',
+                        ppts: [{ title: 'AC Analysis Slides', size: '3.0 MB' }],
+                        notes: [{ title: 'AC Formulas & Phasor Diagrams', desc: 'Power factor and RLC relations' }],
+                        youtube: [
+                            { title: 'Single Phase AC Circuits', channel: 'Gate Smashers', url: 'https://youtu.be/ulGKCeOoR88' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Single Phase Transformer & Power Systems',
+                        aiSummary: 'Transformer operating principle, EMF equation, equivalent circuit, losses, efficiency. Basics of MCB, ELCB, and earthing.',
+                        ppts: [{ title: 'Transformer & Power Systems', size: '3.4 MB' }],
+                        notes: [{ title: 'Transformer Derivations', desc: 'Equivalent circuit and sessional notes' }],
+                        youtube: [
+                            { title: 'Single Phase Transformer EMF Equation', channel: 'Neso Academy', url: 'https://youtu.be/GgckE4H5AJE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Diode and Their Applications',
+                        aiSummary: 'PN junction diode properties, rectifiers, clippers, clampers, Zener diode regulator, LEDs, and basic display devices.',
+                        ppts: [{ title: 'Semiconductor Diode PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Diode Circuit Cheat Sheet', desc: 'Full-wave/half-wave rectifier formulas' }],
+                        youtube: [
+                            { title: 'PN Junction Diode & Rectifiers', channel: 'Neso Academy', url: 'https://youtu.be/EdUAecpYVWQ' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Operational Amplifiers & Op-Amp Applications',
+                        aiSummary: 'Op-amp characteristics, inverting/non-inverting configuration, summing amplifier, integrator, differentiator, sensors, and IoT introduction.',
+                        ppts: [{ title: 'Op-Amps & IoT', size: '3.1 MB' }],
+                        notes: [{ title: 'Op-Amp Solved Circuits', desc: 'Ideal op-amp properties and formulas' }],
+                        youtube: [
+                            { title: 'Introduction to Operational Amplifiers', channel: 'Neso Academy', url: 'https://youtu.be/AuZ00cQ0UrE' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'me-engg-drawing-1', key: 'or', title: 'Engineering Drawing', code: 'KME151',
+                id: 'python-1', key: 'java', title: 'Problem Solving using Python', code: 'ACSE0101',
                 units: [
-                    { title: 'Unit 1: Orthographic Projections', aiSummary: 'First and third angle projections, principal planes, drawing of solids (prisms, cylinders, cones). Essential drafting skill.', ppts: [{ title: 'Engineering Drawing', size: '4.0 MB' }], notes: [{ title: 'Drawing Standards', desc: 'BIS standards and conventions' }], youtube: [{ title: 'Engineering Drawing', channel: 'Gate Smashers', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Basics of python programming',
+                        aiSummary: 'Introduction to python environment, variables, data types, standard input/output, operators, and basic expression evaluation.',
+                        ppts: [{ title: 'Python Basics PPT', size: '2.0 MB' }],
+                        notes: [{ title: 'Python Syntax Cheatsheet', desc: 'Variables, operators & formatting' }],
+                        youtube: [
+                            { title: 'Python Programming Course', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=aqvDMCY516A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Decision Control Statements',
+                        aiSummary: 'Flow control, conditional branching (if, if-else, elif), loops (while, for), break, continue, and pass control statements.',
+                        ppts: [{ title: 'Control Statements Slides', size: '2.2 MB' }],
+                        notes: [{ title: 'Conditional Statements Guide', desc: 'Nested loops and branching examples' }],
+                        youtube: [
+                            { title: 'Loops & Conditionals in Python', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Function and Modules',
+                        aiSummary: 'Defining functions, argument passing, return values, scope of variables, recursion, lambda functions, and modules/packages creation.',
+                        ppts: [{ title: 'Functions & Modules', size: '2.6 MB' }],
+                        notes: [{ title: 'Python Functions Reference', desc: 'Scope, namespace, and standard imports' }],
+                        youtube: [
+                            { title: 'Functions & Recursion', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Basic Data structures in Python',
+                        aiSummary: 'Lists, tuples, sets, and dictionaries operations, comprehensions, built-in methods, and structural comparison.',
+                        ppts: [{ title: 'Python Data Structures', size: '3.1 MB' }],
+                        notes: [{ title: 'Lists & Dicts Cheatsheet', desc: 'Common methods and operations' }],
+                        youtube: [
+                            { title: 'Lists, Tuples & Dictionaries', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: File and Exception handling',
+                        aiSummary: 'File operations (read, write, append), file pointers, exceptions, try-except-finally blocks, and custom exceptions.',
+                        ppts: [{ title: 'Files & Exceptions', size: '2.4 MB' }],
+                        notes: [{ title: 'Error Handling Reference', desc: 'Standard exception classes & file modes' }],
+                        youtube: [
+                            { title: 'Exception Handling in Python', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'english-1', key: 'english', title: 'Professional Communication', code: 'AASL0101',
+                units: [
+                    {
+                        title: 'Unit 1: Introduction & Reading Skills',
+                        aiSummary: 'Basics of technical communication, reading speed, comprehension techniques, and vocabulary enhancement.',
+                        ppts: [{ title: 'PC Unit 1 Slides', size: '1.4 MB' }],
+                        notes: [{ title: 'Communication Basics', desc: 'LSRW skills and active reading' }],
+                        youtube: [
+                            { title: 'Professional Communication Intro', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Writing Skills',
+                        aiSummary: 'Sentence structures, paragraph writing, technical descriptions, letters, resumes, and report writing.',
+                        ppts: [{ title: 'Writing Formats PPT', size: '1.8 MB' }],
+                        notes: [{ title: 'Letter & Resume Guide', desc: 'Standard business formats' }],
+                        youtube: [
+                            { title: 'Technical Writing & Resumes', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Listening Skills',
+                        aiSummary: 'Importance of listening, barriers to active listening, note-taking techniques, and audio comprehension.',
+                        ppts: [{ title: 'Listening Skills PPT', size: '1.2 MB' }],
+                        notes: [{ title: 'Active Listening Tips', desc: 'Note-taking structures' }],
+                        youtube: [
+                            { title: 'Active Listening in Communication', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Speaking Skills',
+                        aiSummary: 'Phonetics, stress, intonation, group discussions, public speaking, and body language.',
+                        ppts: [{ title: 'Phonetics & GD PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Speaking Guidelines', desc: 'Body language & GD cheat sheet' }],
+                        youtube: [
+                            { title: 'Speaking & GD Strategies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Public Speaking & Presentation',
+                        aiSummary: 'Design and delivery of formal presentations, handling questions, and stage presence.',
+                        ppts: [{ title: 'Presentation Skills', size: '1.7 MB' }],
+                        notes: [{ title: 'Presentation Cheat Sheet', desc: 'Structure, slide rules & public speaking' }],
+                        youtube: [
+                            { title: 'Mastering Presentations', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
                 ]
             }
         ],
         2: [
             {
-                id: 'me-math-2', key: 'math', title: 'Engineering Mathematics II', code: 'KAS201',
+                id: 'math-2', key: 'math', title: 'Engineering Mathematics-II', code: 'AAS0203',
                 units: [
-                    { title: 'Unit 1: Integral Calculus & ODE', aiSummary: 'Multiple integrals, line and surface integrals, ordinary differential equations and their engineering applications.', ppts: [{ title: 'Integral Calculus', size: '2.5 MB' }], notes: [{ title: 'ODE Methods', desc: 'Solving techniques' }], youtube: [{ title: 'Engineering Calculus', channel: 'NPTEL', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Ordinary Differential Equation of Higher Order',
+                        aiSummary: 'Linear differential equations of n-th order with constant coefficients, complementary functions, particular integrals, and Cauchy-Euler equations.',
+                        ppts: [{ title: 'Differential Equations PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'ODE Cheatsheet', desc: 'P.I. and C.F. shortcut methods' }],
+                        youtube: [
+                            { title: 'Higher Order Linear Differential Equations', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=Ql42qcOLKfo' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Sequences and series',
+                        aiSummary: 'Infinite series convergence, Ratio test, Comparison test, Cauchy\'s root test, Rabee\'s test, and Fourier series representations.',
+                        ppts: [{ title: 'Series Convergence Slides', size: '2.5 MB' }],
+                        notes: [{ title: 'Convergence Tests Reference', desc: 'All test formulas & sessional notes' }],
+                        youtube: [
+                            { title: 'Sequences & Series Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=HUKR4LWrZ14' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Laplace Transform',
+                        aiSummary: 'Laplace transforms properties, transform of derivatives/integrals, inverse Laplace, Dirac delta, and solving linear ODEs.',
+                        ppts: [{ title: 'Laplace Transforms Complete', size: '3.5 MB' }],
+                        notes: [{ title: 'Laplace Formulas Sheet', desc: 'Properties, shifts, and inverse guides' }],
+                        youtube: [
+                            { title: 'Laplace Transform Complete Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/nmp-5tSp-UY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Vector Calculus',
+                        aiSummary: 'Gradient, divergence, curl, line/surface/volume integrals, Green\'s, Gauss divergence, and Stokes\' theorems.',
+                        ppts: [{ title: 'Vector Calculus Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Vector Theorems Solved PYQs', desc: 'Stokes, Gauss, and Green proofs' }],
+                        youtube: [
+                            { title: 'Vector Calculus Revision', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/IwgqKjA6wko' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-II',
+                        aiSummary: 'Aptitude topics: Partnership, problems on ages, mixtures, direction sense, blood relations, and interest.',
+                        ppts: [{ title: 'Aptitude-II PDF', size: '1.8 MB' }],
+                        notes: [{ title: 'Aptitude Hacks & Shortcuts', desc: 'Ages, partnership & direction tricks' }],
+                        youtube: [
+                            { title: 'Aptitude Practice Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'me-som-1', key: 'som', title: 'Engineering Mechanics', code: 'KME201',
+                id: 'design-1', key: 'default', title: 'Design Thinking-I', code: 'ACSE0203',
                 units: [
-                    { title: 'Unit 1: Statics & Forces', aiSummary: 'Concurrent and non-concurrent forces, moment of a force, conditions of equilibrium, free body diagrams. Lami\'s theorem.', ppts: [{ title: 'Engineering Mechanics', size: '3.5 MB' }], notes: [{ title: 'Statics Notes', desc: 'Equilibrium conditions' }], youtube: [{ title: 'Engineering Mechanics', channel: 'Gate Smashers', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Introduction',
+                        aiSummary: 'Basics of design thinking, iterative cycle, empathy mapping, user-centered mindset, and case studies.',
+                        ppts: [{ title: 'Design Thinking Intro', size: '1.8 MB' }],
+                        notes: [{ title: 'Design Cycle Summary', desc: 'Empathize, Define, Ideate, Prototype, Test' }],
+                        youtube: [
+                            { title: 'Design Thinking for Beginners', channel: 'NPTEL', url: 'https://swayam.gov.in/nd1_noc19_mg60/preview' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Ethical Values and Empathy',
+                        aiSummary: 'Role of empathy in user research, ethical guidelines, interviews, observation, and developing user personas.',
+                        ppts: [{ title: 'Empathy & Ethics Slides', size: '2.0 MB' }],
+                        notes: [{ title: 'User Research Guidelines', desc: 'Interview scripts & observation logs' }],
+                        youtube: [
+                            { title: 'Empathy Mapping Techniques', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Problem Statement & Ideation',
+                        aiSummary: 'Defining the problem, POV statement, brainstorming techniques, SCAMPER method, and selecting solutions.',
+                        ppts: [{ title: 'Problem Definition & Ideation', size: '2.4 MB' }],
+                        notes: [{ title: 'Brainstorming Guidelines', desc: 'POV definitions & ideation rules' }],
+                        youtube: [
+                            { title: 'Ideation & Prototyping Basics', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Critical Thinking',
+                        aiSummary: 'Critical thinking fundamentals, evaluating arguments, identifying logical fallacies, and decision models.',
+                        ppts: [{ title: 'Critical Thinking Slides', size: '1.6 MB' }],
+                        notes: [{ title: 'Logical Fallacies Cheat Sheet', desc: 'Types of fallacies with examples' }],
+                        youtube: [
+                            { title: 'Critical Thinking & Fallacies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Logic and Argumentation',
+                        aiSummary: 'Propositional logic, syllogisms, forming valid arguments, and group exercises in structural debate.',
+                        ppts: [{ title: 'Logic & Arguments PPT', size: '2.2 MB' }],
+                        notes: [{ title: 'Deductive vs Inductive Logic', desc: 'Valid argument forms cheatsheet' }],
+                        youtube: [
+                            { title: 'Formal Logic & Syllogisms', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'physics-1', key: 'physics', title: 'Engineering Physics', code: 'AAS0201A',
+                units: [
+                    {
+                        title: 'Unit 1: Relativistic Mechanics',
+                        aiSummary: 'Frame of reference, Michelson-Morley experiment, Galilean transformations, Lorentz transformations, length contraction, time dilation, and E=mc^2.',
+                        ppts: [{ title: 'Relativity Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Relativistic Derivations', desc: 'Time dilation & mass-energy relation proofs' }],
+                        youtube: [
+                            { title: 'Relativity Complete Lecture', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Quantum Mechanics',
+                        aiSummary: 'De-Broglie hypothesis, wave-particle duality, Heisenberg uncertainty principle. Schrodinger wave equation (time-dependent and time-independent), wave function physical significance, particle in a 1D box. Practice energy level derivations.',
+                        ppts: [{ title: 'Quantum Mechanics Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Quantum Physics Formula Guide', desc: 'Solved 1D box derivations' }],
+                        youtube: [
+                            { title: 'Quantum Mechanics Playlist', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Wave Optics',
+                        aiSummary: 'Interference: Young\'s double-slit experiment, Newton\'s rings, thin film interference. Diffraction: Fresnel vs Fraunhofer, single slit diffraction pattern. Polarization: Brewster\'s law, Malus law, double refraction. Key formulas: fringe width = λD/d, resolving power of grating = nN.',
+                        ppts: [{ title: 'Wave Optics Lecture', size: '2.1 MB' }],
+                        notes: [{ title: 'Optics Quick Notes', desc: 'Derivations and numericals' }],
+                        youtube: [
+                            { title: 'Wave Optics Complete', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Physics and Information Storage',
+                        aiSummary: 'Energy bands, intrinsic & extrinsic semiconductors, Fermi level, carrier concentration, Hall effect, and basic magnetic memory storage systems.',
+                        ppts: [{ title: 'Semiconductor Devices PPT', size: '2.8 MB' }],
+                        notes: [{ title: 'Carrier Concentration & Fermi Level', desc: 'Equations and Hall effect calculations' }],
+                        youtube: [
+                            { title: 'Semiconductors in Physics', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=h6sXoB2eIig' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Fiber Optics & Laser',
+                        aiSummary: 'Laser: Spontaneous and stimulated emission, Einstein\'s coefficients, population inversion, Ruby laser, He-Ne laser. Fiber Optics: Principle of propagation, acceptance angle, numerical aperture, fractional refractive index change, single/multi-mode fibers. Tip: Numerical questions are highly common from numerical aperture.',
+                        ppts: [{ title: 'Lasers & Fiber Optics PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Fiber Optics Cheat Sheet', desc: 'Formulas and step-by-step solved numerics' }],
+                        youtube: [
+                            { title: 'Lasers & Fiber Optics course', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=u8-FidK7zV8' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'python-2', key: 'java', title: 'Problem Solving using Advanced Python', code: 'ACSE0202',
+                units: [
+                    {
+                        title: 'Unit 1: Classes and Objects',
+                        aiSummary: 'OOP fundamentals in Python: defining classes, instantiating objects, constructor methods (__init__), class vs instance attributes, and method types.',
+                        ppts: [{ title: 'Classes & Objects Slides', size: '2.3 MB' }],
+                        notes: [{ title: 'Python OOP Cheatsheet', desc: 'Syntax for classes, objects, and attributes' }],
+                        youtube: [
+                            { title: 'Python Classes and Objects', channel: 'Telusko', url: 'https://nptel.ac.in/courses/106/106/106106145/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Object Oriented Concepts',
+                        aiSummary: 'Inheritance, method overriding, super() function, polymorphism, encapsulation, private attributes, operator overloading, and special methods (__str__, __len__).',
+                        ppts: [{ title: 'OOP Core Concepts', size: '2.7 MB' }],
+                        notes: [{ title: 'Polymorphism & Inheritance', desc: 'Overriding and multiple inheritance rules' }],
+                        youtube: [
+                            { title: 'Python OOP Inheritance', channel: 'Python Course', url: 'https://www.python-course.eu/python3_inheritance.php' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Functional Programming',
+                        aiSummary: 'Functional concepts in Python: map(), filter(), reduce() functions, list/dictionary comprehensions, generators, and iterators.',
+                        ppts: [{ title: 'Functional Programming PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Functional Python Cheatsheet', desc: 'Lambda, mapping, and list comprehension tips' }],
+                        youtube: [
+                            { title: 'Functional Python Programming', channel: 'Real Python', url: 'https://realpython.com/courses/functional-programming-python/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: GUI Programming',
+                        aiSummary: 'GUI development in Python using Tkinter: creating windows, widgets (Labels, Buttons, Entries), layouts (Pack, Grid), and event handling.',
+                        ppts: [{ title: 'Tkinter GUI Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Tkinter Widgets Reference', desc: 'GUI element grids and event bindings' }],
+                        youtube: [
+                            { title: 'Python Tkinter GUI Tutorial', channel: 'Real Python', url: 'https://realpython.com/python-gui-tkinter/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Libraries in Python',
+                        aiSummary: 'Intro to NumPy, Pandas, and Matplotlib libraries for data manipulation and visualization.',
+                        ppts: [{ title: 'Python Libraries PPT', size: '3.8 MB' }],
+                        notes: [{ title: 'Data Analytics Cheatsheet', desc: 'Numpy arrays and Pandas dataframe basics' }],
+                        youtube: [
+                            { title: 'NumPy, Pandas & Matplotlib Course', channel: 'NPTEL', url: 'https://nptel.ac.in/courses/106/107/106107220/' }
+                        ]
+                    }
                 ]
             }
         ],
@@ -485,35 +1524,416 @@ export const semesters = {
     'ce': {
         1: [
             {
-                id: 'ce-math-1', key: 'math', title: 'Engineering Mathematics I', code: 'KAS101',
+                id: 'math-1', key: 'math', title: 'Engineering Mathematics-I', code: 'AAS0103',
                 units: [
-                    { title: 'Unit 1: Matrices & Calculus', aiSummary: 'Matrix methods, eigenvalues. Differential and integral calculus applied to civil engineering problems.', ppts: [{ title: 'Math Lecture', size: '3.2 MB' }], notes: [{ title: 'Math Formulas', desc: 'Key formulas' }], youtube: [{ title: 'Engineering Math', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }] }
+                    {
+                        title: 'Unit 1: Matrices',
+                        aiSummary: 'Matrices are rectangular arrays of numbers. Key Topics: Types of matrices (symmetric, skew-symmetric, orthogonal), Rank of a matrix using echelon form, Cayley-Hamilton theorem for finding inverse, Eigenvalues and Eigenvectors — essential for stability analysis. Important: Practice characteristic equations and diagonalization.',
+                        ppts: [{ title: 'Matrices Complete Lecture', size: '3.2 MB' }],
+                        notes: [{ title: 'Quick Revision - Matrices', desc: 'All formulas & solved examples' }],
+                        youtube: [
+                            { title: 'Matrices & Determinants Complete Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' },
+                            { title: 'Eigenvalues and Eigenvectors', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=PFDu9oVAE-g' },
+                            { title: 'Cayley-Hamilton Theorem - Proof & Problems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' },
+                            { title: 'Diagonalization of a Matrix', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Differential Calculus-I',
+                        aiSummary: 'Covers successive differentiation, Leibniz theorem, Rolle\'s theorem, Mean Value theorems (Lagrange & Cauchy), Taylor and Maclaurin series expansions. Tip: Master the expansion formulas — they appear every exam.',
+                        ppts: [{ title: 'Differential Calculus Slides', size: '2.8 MB' }],
+                        notes: [{ title: 'Formulas Sheet - Calculus', desc: 'All differentiation rules + solved PYQs' }],
+                        youtube: [
+                            { title: 'Leibniz Theorem - Successive Differentiation', channel: 'Bhagwan Singh Vishwakarma', url: 'https://www.youtube.com/watch?v=Zc2l2U9V620' },
+                            { title: 'Taylor\'s & Maclaurin\'s Series Expansion', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=R9Ym08c8KCc' },
+                            { title: 'Rolle\'s & Mean Value Theorems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=vV68Q7-nQ1Y' },
+                            { title: 'Jacobian & Partial Differentiation', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Differential Calculus-II',
+                        aiSummary: 'Focuses on partial differentiation, Euler\'s theorem on homogeneous functions, total derivatives, and Taylor\'s theorem for two variables.',
+                        ppts: [{ title: 'Calculus-II PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'Calculus-II Revision Sheet', desc: 'Euler\'s theorem & partial derivatives' }],
+                        youtube: [
+                            { title: 'Euler\'s Theorem Homogeneous Functions', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' },
+                            { title: 'Total Differentiation & Chain Rule', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q4c33f2T-8g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Multivariable Calculus',
+                        aiSummary: 'Covers double and triple integrals, change of order of integration, coordinate transformations (Polar/Spherical/Cylindrical) using Jacobians, and Dirichlet\'s integrals.',
+                        ppts: [{ title: 'Multivariable Calculus PPT', size: '4.5 MB' }],
+                        notes: [{ title: 'Integrals Cheatsheet', desc: 'Double/triple integrals & area/volume' }],
+                        youtube: [
+                            { title: 'Double Integrals Concepts', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=3M6Z6Qj023w' },
+                            { title: 'Change of Order of Integration', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=xH6S3nQvM5E' },
+                            { title: 'Dirichlet\'s Theorem & Triple Integrals', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=48_S69sXU_A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-I',
+                        aiSummary: 'Quantitative aptitude concepts: Number systems, Profit & Loss, Percentage, Simple and Compound Interest, and Ratio & Proportion.',
+                        ppts: [{ title: 'Aptitude-I PDF', size: '1.9 MB' }],
+                        notes: [{ title: 'Aptitude Formulas Sheet', desc: 'Shortcuts and speed math tricks' }],
+                        youtube: [
+                            { title: 'Quantitative Aptitude Complete Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' },
+                            { title: 'Profit, Loss & Discount Tricks', channel: 'Feel Free to Learn', url: 'https://www.youtube.com/watch?v=jiEaKYI0ATY' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ce-physics-1', key: 'physics', title: 'Engineering Physics', code: 'KAS102',
+                id: 'bee-1', key: 'bee', title: 'Basic Electrical and Electronics Engineering', code: 'AEC0101',
                 units: [
-                    { title: 'Unit 1: Mechanics & Properties of Matter', aiSummary: 'Elasticity, viscosity, surface tension. Direct relevance to structural analysis and material selection.', ppts: [{ title: 'Physics Lecture', size: '2.1 MB' }], notes: [{ title: 'Material Properties', desc: 'Key equations' }], youtube: [{ title: 'Engineering Physics', channel: 'Physics Wallah', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: D.C Circuit Analysis and Network Theorems',
+                        aiSummary: 'Covers active & passive elements, sources, Kirchhoff\'s laws, nodal & loop analysis, Superposition, Thevenin\'s, Norton\'s, and Maximum Power Transfer theorems.',
+                        ppts: [{ title: 'DC Circuit Basics', size: '2.5 MB' }],
+                        notes: [{ title: 'Circuit Theorems Guide', desc: 'Solved mesh/nodal analysis problems' }],
+                        youtube: [
+                            { title: 'Kirchhoff\'s Laws & Nodal Analysis', channel: 'Gate Smashers', url: 'https://youtu.be/FjaJEo7knF4' },
+                            { title: 'Thevenin\'s & Superposition Theorems', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Steady State Analysis of AC Circuit',
+                        aiSummary: 'AC fundamentals, phasors, RLC series & parallel circuits, resonance, and three-phase balanced star/delta connections.',
+                        ppts: [{ title: 'AC Analysis Slides', size: '3.0 MB' }],
+                        notes: [{ title: 'AC Formulas & Phasor Diagrams', desc: 'Power factor and RLC relations' }],
+                        youtube: [
+                            { title: 'Single Phase AC Circuits', channel: 'Gate Smashers', url: 'https://youtu.be/ulGKCeOoR88' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Single Phase Transformer & Power Systems',
+                        aiSummary: 'Transformer operating principle, EMF equation, equivalent circuit, losses, efficiency. Basics of MCB, ELCB, and earthing.',
+                        ppts: [{ title: 'Transformer & Power Systems', size: '3.4 MB' }],
+                        notes: [{ title: 'Transformer Derivations', desc: 'Equivalent circuit and sessional notes' }],
+                        youtube: [
+                            { title: 'Single Phase Transformer EMF Equation', channel: 'Neso Academy', url: 'https://youtu.be/GgckE4H5AJE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Diode and Their Applications',
+                        aiSummary: 'PN junction diode properties, rectifiers, clippers, clampers, Zener diode regulator, LEDs, and basic display devices.',
+                        ppts: [{ title: 'Semiconductor Diode PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Diode Circuit Cheat Sheet', desc: 'Full-wave/half-wave rectifier formulas' }],
+                        youtube: [
+                            { title: 'PN Junction Diode & Rectifiers', channel: 'Neso Academy', url: 'https://youtu.be/EdUAecpYVWQ' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Operational Amplifiers & Op-Amp Applications',
+                        aiSummary: 'Op-amp characteristics, inverting/non-inverting configuration, summing amplifier, integrator, differentiator, sensors, and IoT introduction.',
+                        ppts: [{ title: 'Op-Amps & IoT', size: '3.1 MB' }],
+                        notes: [{ title: 'Op-Amp Solved Circuits', desc: 'Ideal op-amp properties and formulas' }],
+                        youtube: [
+                            { title: 'Introduction to Operational Amplifiers', channel: 'Neso Academy', url: 'https://youtu.be/AuZ00cQ0UrE' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ce-engg-drawing-1', key: 'survey', title: 'Engineering Drawing', code: 'KCE151',
+                id: 'python-1', key: 'java', title: 'Problem Solving using Python', code: 'ACSE0101',
                 units: [
-                    { title: 'Unit 1: Orthographic Projections', aiSummary: 'First and third angle projections, sectional views, isometric drawings. Foundation for structural and architectural drawings.', ppts: [{ title: 'Engineering Drawing', size: '4.0 MB' }], notes: [{ title: 'Drawing Standards', desc: 'BIS conventions' }], youtube: [{ title: 'Engineering Drawing', channel: 'Gate Smashers', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Basics of python programming',
+                        aiSummary: 'Introduction to python environment, variables, data types, standard input/output, operators, and basic expression evaluation.',
+                        ppts: [{ title: 'Python Basics PPT', size: '2.0 MB' }],
+                        notes: [{ title: 'Python Syntax Cheatsheet', desc: 'Variables, operators & formatting' }],
+                        youtube: [
+                            { title: 'Python Programming Course', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=aqvDMCY516A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Decision Control Statements',
+                        aiSummary: 'Flow control, conditional branching (if, if-else, elif), loops (while, for), break, continue, and pass control statements.',
+                        ppts: [{ title: 'Control Statements Slides', size: '2.2 MB' }],
+                        notes: [{ title: 'Conditional Statements Guide', desc: 'Nested loops and branching examples' }],
+                        youtube: [
+                            { title: 'Loops & Conditionals in Python', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Function and Modules',
+                        aiSummary: 'Defining functions, argument passing, return values, scope of variables, recursion, lambda functions, and modules/packages creation.',
+                        ppts: [{ title: 'Functions & Modules', size: '2.6 MB' }],
+                        notes: [{ title: 'Python Functions Reference', desc: 'Scope, namespace, and standard imports' }],
+                        youtube: [
+                            { title: 'Functions & Recursion', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Basic Data structures in Python',
+                        aiSummary: 'Lists, tuples, sets, and dictionaries operations, comprehensions, built-in methods, and structural comparison.',
+                        ppts: [{ title: 'Python Data Structures', size: '3.1 MB' }],
+                        notes: [{ title: 'Lists & Dicts Cheatsheet', desc: 'Common methods and operations' }],
+                        youtube: [
+                            { title: 'Lists, Tuples & Dictionaries', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: File and Exception handling',
+                        aiSummary: 'File operations (read, write, append), file pointers, exceptions, try-except-finally blocks, and custom exceptions.',
+                        ppts: [{ title: 'Files & Exceptions', size: '2.4 MB' }],
+                        notes: [{ title: 'Error Handling Reference', desc: 'Standard exception classes & file modes' }],
+                        youtube: [
+                            { title: 'Exception Handling in Python', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'english-1', key: 'english', title: 'Professional Communication', code: 'AASL0101',
+                units: [
+                    {
+                        title: 'Unit 1: Introduction & Reading Skills',
+                        aiSummary: 'Basics of technical communication, reading speed, comprehension techniques, and vocabulary enhancement.',
+                        ppts: [{ title: 'PC Unit 1 Slides', size: '1.4 MB' }],
+                        notes: [{ title: 'Communication Basics', desc: 'LSRW skills and active reading' }],
+                        youtube: [
+                            { title: 'Professional Communication Intro', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Writing Skills',
+                        aiSummary: 'Sentence structures, paragraph writing, technical descriptions, letters, resumes, and report writing.',
+                        ppts: [{ title: 'Writing Formats PPT', size: '1.8 MB' }],
+                        notes: [{ title: 'Letter & Resume Guide', desc: 'Standard business formats' }],
+                        youtube: [
+                            { title: 'Technical Writing & Resumes', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Listening Skills',
+                        aiSummary: 'Importance of listening, barriers to active listening, note-taking techniques, and audio comprehension.',
+                        ppts: [{ title: 'Listening Skills PPT', size: '1.2 MB' }],
+                        notes: [{ title: 'Active Listening Tips', desc: 'Note-taking structures' }],
+                        youtube: [
+                            { title: 'Active Listening in Communication', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Speaking Skills',
+                        aiSummary: 'Phonetics, stress, intonation, group discussions, public speaking, and body language.',
+                        ppts: [{ title: 'Phonetics & GD PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Speaking Guidelines', desc: 'Body language & GD cheat sheet' }],
+                        youtube: [
+                            { title: 'Speaking & GD Strategies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Public Speaking & Presentation',
+                        aiSummary: 'Design and delivery of formal presentations, handling questions, and stage presence.',
+                        ppts: [{ title: 'Presentation Skills', size: '1.7 MB' }],
+                        notes: [{ title: 'Presentation Cheat Sheet', desc: 'Structure, slide rules & public speaking' }],
+                        youtube: [
+                            { title: 'Mastering Presentations', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
                 ]
             }
         ],
         2: [
             {
-                id: 'ce-math-2', key: 'math', title: 'Engineering Mathematics II', code: 'KAS201',
+                id: 'math-2', key: 'math', title: 'Engineering Mathematics-II', code: 'AAS0203',
                 units: [
-                    { title: 'Unit 1: Differential Equations & Transforms', aiSummary: 'ODE, PDE applied to structural vibrations. Fourier and Laplace transforms for civil engineering analysis.', ppts: [{ title: 'Math II Lecture', size: '2.5 MB' }], notes: [{ title: 'ODE Reference', desc: 'Solution methods' }], youtube: [{ title: 'Math II', channel: 'NPTEL', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Ordinary Differential Equation of Higher Order',
+                        aiSummary: 'Linear differential equations of n-th order with constant coefficients, complementary functions, particular integrals, and Cauchy-Euler equations.',
+                        ppts: [{ title: 'Differential Equations PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'ODE Cheatsheet', desc: 'P.I. and C.F. shortcut methods' }],
+                        youtube: [
+                            { title: 'Higher Order Linear Differential Equations', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=Ql42qcOLKfo' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Sequences and series',
+                        aiSummary: 'Infinite series convergence, Ratio test, Comparison test, Cauchy\'s root test, Rabee\'s test, and Fourier series representations.',
+                        ppts: [{ title: 'Series Convergence Slides', size: '2.5 MB' }],
+                        notes: [{ title: 'Convergence Tests Reference', desc: 'All test formulas & sessional notes' }],
+                        youtube: [
+                            { title: 'Sequences & Series Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=HUKR4LWrZ14' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Laplace Transform',
+                        aiSummary: 'Laplace transforms properties, transform of derivatives/integrals, inverse Laplace, Dirac delta, and solving linear ODEs.',
+                        ppts: [{ title: 'Laplace Transforms Complete', size: '3.5 MB' }],
+                        notes: [{ title: 'Laplace Formulas Sheet', desc: 'Properties, shifts, and inverse guides' }],
+                        youtube: [
+                            { title: 'Laplace Transform Complete Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/nmp-5tSp-UY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Vector Calculus',
+                        aiSummary: 'Gradient, divergence, curl, line/surface/volume integrals, Green\'s, Gauss divergence, and Stokes\' theorems.',
+                        ppts: [{ title: 'Vector Calculus Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Vector Theorems Solved PYQs', desc: 'Stokes, Gauss, and Green proofs' }],
+                        youtube: [
+                            { title: 'Vector Calculus Revision', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/IwgqKjA6wko' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-II',
+                        aiSummary: 'Aptitude topics: Partnership, problems on ages, mixtures, direction sense, blood relations, and interest.',
+                        ppts: [{ title: 'Aptitude-II PDF', size: '1.8 MB' }],
+                        notes: [{ title: 'Aptitude Hacks & Shortcuts', desc: 'Ages, partnership & direction tricks' }],
+                        youtube: [
+                            { title: 'Aptitude Practice Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ce-mech-1', key: 'som', title: 'Engineering Mechanics', code: 'KCE201',
+                id: 'design-1', key: 'default', title: 'Design Thinking-I', code: 'ACSE0203',
                 units: [
-                    { title: 'Unit 1: Statics of Structures', aiSummary: 'Forces, resultants, equilibrium. Analysis of trusses using method of joints and sections. Free body diagrams.', ppts: [{ title: 'Engineering Mechanics', size: '3.5 MB' }], notes: [{ title: 'Statics Notes', desc: 'Truss analysis' }], youtube: [{ title: 'Engineering Mechanics', channel: 'NPTEL', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Introduction',
+                        aiSummary: 'Basics of design thinking, iterative cycle, empathy mapping, user-centered mindset, and case studies.',
+                        ppts: [{ title: 'Design Thinking Intro', size: '1.8 MB' }],
+                        notes: [{ title: 'Design Cycle Summary', desc: 'Empathize, Define, Ideate, Prototype, Test' }],
+                        youtube: [
+                            { title: 'Design Thinking for Beginners', channel: 'NPTEL', url: 'https://swayam.gov.in/nd1_noc19_mg60/preview' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Ethical Values and Empathy',
+                        aiSummary: 'Role of empathy in user research, ethical guidelines, interviews, observation, and developing user personas.',
+                        ppts: [{ title: 'Empathy & Ethics Slides', size: '2.0 MB' }],
+                        notes: [{ title: 'User Research Guidelines', desc: 'Interview scripts & observation logs' }],
+                        youtube: [
+                            { title: 'Empathy Mapping Techniques', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Problem Statement & Ideation',
+                        aiSummary: 'Defining the problem, POV statement, brainstorming techniques, SCAMPER method, and selecting solutions.',
+                        ppts: [{ title: 'Problem Definition & Ideation', size: '2.4 MB' }],
+                        notes: [{ title: 'Brainstorming Guidelines', desc: 'POV definitions & ideation rules' }],
+                        youtube: [
+                            { title: 'Ideation & Prototyping Basics', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Critical Thinking',
+                        aiSummary: 'Critical thinking fundamentals, evaluating arguments, identifying logical fallacies, and decision models.',
+                        ppts: [{ title: 'Critical Thinking Slides', size: '1.6 MB' }],
+                        notes: [{ title: 'Logical Fallacies Cheat Sheet', desc: 'Types of fallacies with examples' }],
+                        youtube: [
+                            { title: 'Critical Thinking & Fallacies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Logic and Argumentation',
+                        aiSummary: 'Propositional logic, syllogisms, forming valid arguments, and group exercises in structural debate.',
+                        ppts: [{ title: 'Logic & Arguments PPT', size: '2.2 MB' }],
+                        notes: [{ title: 'Deductive vs Inductive Logic', desc: 'Valid argument forms cheatsheet' }],
+                        youtube: [
+                            { title: 'Formal Logic & Syllogisms', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'physics-1', key: 'physics', title: 'Engineering Physics', code: 'AAS0201A',
+                units: [
+                    {
+                        title: 'Unit 1: Relativistic Mechanics',
+                        aiSummary: 'Frame of reference, Michelson-Morley experiment, Galilean transformations, Lorentz transformations, length contraction, time dilation, and E=mc^2.',
+                        ppts: [{ title: 'Relativity Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Relativistic Derivations', desc: 'Time dilation & mass-energy relation proofs' }],
+                        youtube: [
+                            { title: 'Relativity Complete Lecture', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Quantum Mechanics',
+                        aiSummary: 'De-Broglie hypothesis, wave-particle duality, Heisenberg uncertainty principle. Schrodinger wave equation (time-dependent and time-independent), wave function physical significance, particle in a 1D box. Practice energy level derivations.',
+                        ppts: [{ title: 'Quantum Mechanics Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Quantum Physics Formula Guide', desc: 'Solved 1D box derivations' }],
+                        youtube: [
+                            { title: 'Quantum Mechanics Playlist', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Wave Optics',
+                        aiSummary: 'Interference: Young\'s double-slit experiment, Newton\'s rings, thin film interference. Diffraction: Fresnel vs Fraunhofer, single slit diffraction pattern. Polarization: Brewster\'s law, Malus law, double refraction. Key formulas: fringe width = λD/d, resolving power of grating = nN.',
+                        ppts: [{ title: 'Wave Optics Lecture', size: '2.1 MB' }],
+                        notes: [{ title: 'Optics Quick Notes', desc: 'Derivations and numericals' }],
+                        youtube: [
+                            { title: 'Wave Optics Complete', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Physics and Information Storage',
+                        aiSummary: 'Energy bands, intrinsic & extrinsic semiconductors, Fermi level, carrier concentration, Hall effect, and basic magnetic memory storage systems.',
+                        ppts: [{ title: 'Semiconductor Devices PPT', size: '2.8 MB' }],
+                        notes: [{ title: 'Carrier Concentration & Fermi Level', desc: 'Equations and Hall effect calculations' }],
+                        youtube: [
+                            { title: 'Semiconductors in Physics', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=h6sXoB2eIig' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Fiber Optics & Laser',
+                        aiSummary: 'Laser: Spontaneous and stimulated emission, Einstein\'s coefficients, population inversion, Ruby laser, He-Ne laser. Fiber Optics: Principle of propagation, acceptance angle, numerical aperture, fractional refractive index change, single/multi-mode fibers. Tip: Numerical questions are highly common from numerical aperture.',
+                        ppts: [{ title: 'Lasers & Fiber Optics PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Fiber Optics Cheat Sheet', desc: 'Formulas and step-by-step solved numerics' }],
+                        youtube: [
+                            { title: 'Lasers & Fiber Optics course', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=u8-FidK7zV8' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'python-2', key: 'java', title: 'Problem Solving using Advanced Python', code: 'ACSE0202',
+                units: [
+                    {
+                        title: 'Unit 1: Classes and Objects',
+                        aiSummary: 'OOP fundamentals in Python: defining classes, instantiating objects, constructor methods (__init__), class vs instance attributes, and method types.',
+                        ppts: [{ title: 'Classes & Objects Slides', size: '2.3 MB' }],
+                        notes: [{ title: 'Python OOP Cheatsheet', desc: 'Syntax for classes, objects, and attributes' }],
+                        youtube: [
+                            { title: 'Python Classes and Objects', channel: 'Telusko', url: 'https://nptel.ac.in/courses/106/106/106106145/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Object Oriented Concepts',
+                        aiSummary: 'Inheritance, method overriding, super() function, polymorphism, encapsulation, private attributes, operator overloading, and special methods (__str__, __len__).',
+                        ppts: [{ title: 'OOP Core Concepts', size: '2.7 MB' }],
+                        notes: [{ title: 'Polymorphism & Inheritance', desc: 'Overriding and multiple inheritance rules' }],
+                        youtube: [
+                            { title: 'Python OOP Inheritance', channel: 'Python Course', url: 'https://www.python-course.eu/python3_inheritance.php' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Functional Programming',
+                        aiSummary: 'Functional concepts in Python: map(), filter(), reduce() functions, list/dictionary comprehensions, generators, and iterators.',
+                        ppts: [{ title: 'Functional Programming PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Functional Python Cheatsheet', desc: 'Lambda, mapping, and list comprehension tips' }],
+                        youtube: [
+                            { title: 'Functional Python Programming', channel: 'Real Python', url: 'https://realpython.com/courses/functional-programming-python/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: GUI Programming',
+                        aiSummary: 'GUI development in Python using Tkinter: creating windows, widgets (Labels, Buttons, Entries), layouts (Pack, Grid), and event handling.',
+                        ppts: [{ title: 'Tkinter GUI Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Tkinter Widgets Reference', desc: 'GUI element grids and event bindings' }],
+                        youtube: [
+                            { title: 'Python Tkinter GUI Tutorial', channel: 'Real Python', url: 'https://realpython.com/python-gui-tkinter/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Libraries in Python',
+                        aiSummary: 'Intro to NumPy, Pandas, and Matplotlib libraries for data manipulation and visualization.',
+                        ppts: [{ title: 'Python Libraries PPT', size: '3.8 MB' }],
+                        notes: [{ title: 'Data Analytics Cheatsheet', desc: 'Numpy arrays and Pandas dataframe basics' }],
+                        youtube: [
+                            { title: 'NumPy, Pandas & Matplotlib Course', channel: 'NPTEL', url: 'https://nptel.ac.in/courses/106/107/106107220/' }
+                        ]
+                    }
                 ]
             }
         ],
@@ -555,35 +1975,416 @@ export const semesters = {
     'ee': {
         1: [
             {
-                id: 'ee-math-1', key: 'math', title: 'Engineering Mathematics I', code: 'KAS101',
+                id: 'math-1', key: 'math', title: 'Engineering Mathematics-I', code: 'AAS0103',
                 units: [
-                    { title: 'Unit 1: Matrices & Differential Calculus', aiSummary: 'Matrix operations, eigenvalues. Differential calculus for engineering analysis. Foundation for electrical circuit analysis.', ppts: [{ title: 'Math Lecture', size: '3.2 MB' }], notes: [{ title: 'Math Formulas', desc: 'Key formulas' }], youtube: [{ title: 'Engineering Math', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }] }
+                    {
+                        title: 'Unit 1: Matrices',
+                        aiSummary: 'Matrices are rectangular arrays of numbers. Key Topics: Types of matrices (symmetric, skew-symmetric, orthogonal), Rank of a matrix using echelon form, Cayley-Hamilton theorem for finding inverse, Eigenvalues and Eigenvectors — essential for stability analysis. Important: Practice characteristic equations and diagonalization.',
+                        ppts: [{ title: 'Matrices Complete Lecture', size: '3.2 MB' }],
+                        notes: [{ title: 'Quick Revision - Matrices', desc: 'All formulas & solved examples' }],
+                        youtube: [
+                            { title: 'Matrices & Determinants Complete Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' },
+                            { title: 'Eigenvalues and Eigenvectors', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=PFDu9oVAE-g' },
+                            { title: 'Cayley-Hamilton Theorem - Proof & Problems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' },
+                            { title: 'Diagonalization of a Matrix', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Differential Calculus-I',
+                        aiSummary: 'Covers successive differentiation, Leibniz theorem, Rolle\'s theorem, Mean Value theorems (Lagrange & Cauchy), Taylor and Maclaurin series expansions. Tip: Master the expansion formulas — they appear every exam.',
+                        ppts: [{ title: 'Differential Calculus Slides', size: '2.8 MB' }],
+                        notes: [{ title: 'Formulas Sheet - Calculus', desc: 'All differentiation rules + solved PYQs' }],
+                        youtube: [
+                            { title: 'Leibniz Theorem - Successive Differentiation', channel: 'Bhagwan Singh Vishwakarma', url: 'https://www.youtube.com/watch?v=Zc2l2U9V620' },
+                            { title: 'Taylor\'s & Maclaurin\'s Series Expansion', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=R9Ym08c8KCc' },
+                            { title: 'Rolle\'s & Mean Value Theorems', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=vV68Q7-nQ1Y' },
+                            { title: 'Jacobian & Partial Differentiation', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Differential Calculus-II',
+                        aiSummary: 'Focuses on partial differentiation, Euler\'s theorem on homogeneous functions, total derivatives, and Taylor\'s theorem for two variables.',
+                        ppts: [{ title: 'Calculus-II PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'Calculus-II Revision Sheet', desc: 'Euler\'s theorem & partial derivatives' }],
+                        youtube: [
+                            { title: 'Euler\'s Theorem Homogeneous Functions', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=N4E_R1U3jM0' },
+                            { title: 'Total Differentiation & Chain Rule', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=q4c33f2T-8g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Multivariable Calculus',
+                        aiSummary: 'Covers double and triple integrals, change of order of integration, coordinate transformations (Polar/Spherical/Cylindrical) using Jacobians, and Dirichlet\'s integrals.',
+                        ppts: [{ title: 'Multivariable Calculus PPT', size: '4.5 MB' }],
+                        notes: [{ title: 'Integrals Cheatsheet', desc: 'Double/triple integrals & area/volume' }],
+                        youtube: [
+                            { title: 'Double Integrals Concepts', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=3M6Z6Qj023w' },
+                            { title: 'Change of Order of Integration', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=xH6S3nQvM5E' },
+                            { title: 'Dirichlet\'s Theorem & Triple Integrals', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=48_S69sXU_A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-I',
+                        aiSummary: 'Quantitative aptitude concepts: Number systems, Profit & Loss, Percentage, Simple and Compound Interest, and Ratio & Proportion.',
+                        ppts: [{ title: 'Aptitude-I PDF', size: '1.9 MB' }],
+                        notes: [{ title: 'Aptitude Formulas Sheet', desc: 'Shortcuts and speed math tricks' }],
+                        youtube: [
+                            { title: 'Quantitative Aptitude Complete Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' },
+                            { title: 'Profit, Loss & Discount Tricks', channel: 'Feel Free to Learn', url: 'https://www.youtube.com/watch?v=jiEaKYI0ATY' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ee-physics-1', key: 'physics', title: 'Engineering Physics', code: 'KAS102',
+                id: 'bee-1', key: 'bee', title: 'Basic Electrical and Electronics Engineering', code: 'AEC0101',
                 units: [
-                    { title: 'Unit 1: Electromagnetic Theory Basics', aiSummary: 'Electric and magnetic fields, Maxwell\'s equations in integral form. Electromagnetic induction and its applications.', ppts: [{ title: 'Physics Lecture', size: '2.1 MB' }], notes: [{ title: 'EM Notes', desc: 'Faraday and Maxwell' }], youtube: [{ title: 'Engineering Physics', channel: 'Physics Wallah', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: D.C Circuit Analysis and Network Theorems',
+                        aiSummary: 'Covers active & passive elements, sources, Kirchhoff\'s laws, nodal & loop analysis, Superposition, Thevenin\'s, Norton\'s, and Maximum Power Transfer theorems.',
+                        ppts: [{ title: 'DC Circuit Basics', size: '2.5 MB' }],
+                        notes: [{ title: 'Circuit Theorems Guide', desc: 'Solved mesh/nodal analysis problems' }],
+                        youtube: [
+                            { title: 'Kirchhoff\'s Laws & Nodal Analysis', channel: 'Gate Smashers', url: 'https://youtu.be/FjaJEo7knF4' },
+                            { title: 'Thevenin\'s & Superposition Theorems', channel: 'Neso Academy', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Steady State Analysis of AC Circuit',
+                        aiSummary: 'AC fundamentals, phasors, RLC series & parallel circuits, resonance, and three-phase balanced star/delta connections.',
+                        ppts: [{ title: 'AC Analysis Slides', size: '3.0 MB' }],
+                        notes: [{ title: 'AC Formulas & Phasor Diagrams', desc: 'Power factor and RLC relations' }],
+                        youtube: [
+                            { title: 'Single Phase AC Circuits', channel: 'Gate Smashers', url: 'https://youtu.be/ulGKCeOoR88' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Single Phase Transformer & Power Systems',
+                        aiSummary: 'Transformer operating principle, EMF equation, equivalent circuit, losses, efficiency. Basics of MCB, ELCB, and earthing.',
+                        ppts: [{ title: 'Transformer & Power Systems', size: '3.4 MB' }],
+                        notes: [{ title: 'Transformer Derivations', desc: 'Equivalent circuit and sessional notes' }],
+                        youtube: [
+                            { title: 'Single Phase Transformer EMF Equation', channel: 'Neso Academy', url: 'https://youtu.be/GgckE4H5AJE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Diode and Their Applications',
+                        aiSummary: 'PN junction diode properties, rectifiers, clippers, clampers, Zener diode regulator, LEDs, and basic display devices.',
+                        ppts: [{ title: 'Semiconductor Diode PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Diode Circuit Cheat Sheet', desc: 'Full-wave/half-wave rectifier formulas' }],
+                        youtube: [
+                            { title: 'PN Junction Diode & Rectifiers', channel: 'Neso Academy', url: 'https://youtu.be/EdUAecpYVWQ' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Operational Amplifiers & Op-Amp Applications',
+                        aiSummary: 'Op-amp characteristics, inverting/non-inverting configuration, summing amplifier, integrator, differentiator, sensors, and IoT introduction.',
+                        ppts: [{ title: 'Op-Amps & IoT', size: '3.1 MB' }],
+                        notes: [{ title: 'Op-Amp Solved Circuits', desc: 'Ideal op-amp properties and formulas' }],
+                        youtube: [
+                            { title: 'Introduction to Operational Amplifiers', channel: 'Neso Academy', url: 'https://youtu.be/AuZ00cQ0UrE' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ee-bee-1', key: 'bee', title: 'Basic Electrical Engineering', code: 'KEE101',
+                id: 'python-1', key: 'java', title: 'Problem Solving using Python', code: 'ACSE0101',
                 units: [
-                    { title: 'Unit 1: DC Circuit Analysis', aiSummary: 'Ohm\'s law, KVL, KCL. Mesh and nodal analysis. Thevenin\'s, Norton\'s, superposition, maximum power transfer theorems.', ppts: [{ title: 'BEE Lecture', size: '3.0 MB' }], notes: [{ title: 'Circuit Theorems', desc: 'All key theorems' }], youtube: [{ title: 'Basic Electrical', channel: 'Neso Academy', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Basics of python programming',
+                        aiSummary: 'Introduction to python environment, variables, data types, standard input/output, operators, and basic expression evaluation.',
+                        ppts: [{ title: 'Python Basics PPT', size: '2.0 MB' }],
+                        notes: [{ title: 'Python Syntax Cheatsheet', desc: 'Variables, operators & formatting' }],
+                        youtube: [
+                            { title: 'Python Programming Course', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=aqvDMCY516A' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Decision Control Statements',
+                        aiSummary: 'Flow control, conditional branching (if, if-else, elif), loops (while, for), break, continue, and pass control statements.',
+                        ppts: [{ title: 'Control Statements Slides', size: '2.2 MB' }],
+                        notes: [{ title: 'Conditional Statements Guide', desc: 'Nested loops and branching examples' }],
+                        youtube: [
+                            { title: 'Loops & Conditionals in Python', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Function and Modules',
+                        aiSummary: 'Defining functions, argument passing, return values, scope of variables, recursion, lambda functions, and modules/packages creation.',
+                        ppts: [{ title: 'Functions & Modules', size: '2.6 MB' }],
+                        notes: [{ title: 'Python Functions Reference', desc: 'Scope, namespace, and standard imports' }],
+                        youtube: [
+                            { title: 'Functions & Recursion', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Basic Data structures in Python',
+                        aiSummary: 'Lists, tuples, sets, and dictionaries operations, comprehensions, built-in methods, and structural comparison.',
+                        ppts: [{ title: 'Python Data Structures', size: '3.1 MB' }],
+                        notes: [{ title: 'Lists & Dicts Cheatsheet', desc: 'Common methods and operations' }],
+                        youtube: [
+                            { title: 'Lists, Tuples & Dictionaries', channel: 'Telusko', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: File and Exception handling',
+                        aiSummary: 'File operations (read, write, append), file pointers, exceptions, try-except-finally blocks, and custom exceptions.',
+                        ppts: [{ title: 'Files & Exceptions', size: '2.4 MB' }],
+                        notes: [{ title: 'Error Handling Reference', desc: 'Standard exception classes & file modes' }],
+                        youtube: [
+                            { title: 'Exception Handling in Python', channel: 'CodeWithHarry', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'english-1', key: 'english', title: 'Professional Communication', code: 'AASL0101',
+                units: [
+                    {
+                        title: 'Unit 1: Introduction & Reading Skills',
+                        aiSummary: 'Basics of technical communication, reading speed, comprehension techniques, and vocabulary enhancement.',
+                        ppts: [{ title: 'PC Unit 1 Slides', size: '1.4 MB' }],
+                        notes: [{ title: 'Communication Basics', desc: 'LSRW skills and active reading' }],
+                        youtube: [
+                            { title: 'Professional Communication Intro', channel: 'Ekeeda', url: 'https://www.youtube.com/watch?v=oBq7YqkG-4Y' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Writing Skills',
+                        aiSummary: 'Sentence structures, paragraph writing, technical descriptions, letters, resumes, and report writing.',
+                        ppts: [{ title: 'Writing Formats PPT', size: '1.8 MB' }],
+                        notes: [{ title: 'Letter & Resume Guide', desc: 'Standard business formats' }],
+                        youtube: [
+                            { title: 'Technical Writing & Resumes', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=84jW4cE28vY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Listening Skills',
+                        aiSummary: 'Importance of listening, barriers to active listening, note-taking techniques, and audio comprehension.',
+                        ppts: [{ title: 'Listening Skills PPT', size: '1.2 MB' }],
+                        notes: [{ title: 'Active Listening Tips', desc: 'Note-taking structures' }],
+                        youtube: [
+                            { title: 'Active Listening in Communication', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Speaking Skills',
+                        aiSummary: 'Phonetics, stress, intonation, group discussions, public speaking, and body language.',
+                        ppts: [{ title: 'Phonetics & GD PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Speaking Guidelines', desc: 'Body language & GD cheat sheet' }],
+                        youtube: [
+                            { title: 'Speaking & GD Strategies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Public Speaking & Presentation',
+                        aiSummary: 'Design and delivery of formal presentations, handling questions, and stage presence.',
+                        ppts: [{ title: 'Presentation Skills', size: '1.7 MB' }],
+                        notes: [{ title: 'Presentation Cheat Sheet', desc: 'Structure, slide rules & public speaking' }],
+                        youtube: [
+                            { title: 'Mastering Presentations', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    }
                 ]
             }
         ],
         2: [
             {
-                id: 'ee-math-2', key: 'math', title: 'Engineering Mathematics II', code: 'KAS201',
+                id: 'math-2', key: 'math', title: 'Engineering Mathematics-II', code: 'AAS0203',
                 units: [
-                    { title: 'Unit 1: Complex Analysis & Transforms', aiSummary: 'Complex functions, contour integration, Laplace and Fourier transforms. Essential for circuit analysis and signal processing.', ppts: [{ title: 'Complex Analysis', size: '2.5 MB' }], notes: [{ title: 'Transform Pairs', desc: 'Laplace and Fourier tables' }], youtube: [{ title: 'Complex Analysis', channel: 'NPTEL', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Ordinary Differential Equation of Higher Order',
+                        aiSummary: 'Linear differential equations of n-th order with constant coefficients, complementary functions, particular integrals, and Cauchy-Euler equations.',
+                        ppts: [{ title: 'Differential Equations PPT', size: '3.1 MB' }],
+                        notes: [{ title: 'ODE Cheatsheet', desc: 'P.I. and C.F. shortcut methods' }],
+                        youtube: [
+                            { title: 'Higher Order Linear Differential Equations', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=Ql42qcOLKfo' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Sequences and series',
+                        aiSummary: 'Infinite series convergence, Ratio test, Comparison test, Cauchy\'s root test, Rabee\'s test, and Fourier series representations.',
+                        ppts: [{ title: 'Series Convergence Slides', size: '2.5 MB' }],
+                        notes: [{ title: 'Convergence Tests Reference', desc: 'All test formulas & sessional notes' }],
+                        youtube: [
+                            { title: 'Sequences & Series Playlist', channel: 'Dr. Gajendra Purohit', url: 'https://www.youtube.com/watch?v=HUKR4LWrZ14' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Laplace Transform',
+                        aiSummary: 'Laplace transforms properties, transform of derivatives/integrals, inverse Laplace, Dirac delta, and solving linear ODEs.',
+                        ppts: [{ title: 'Laplace Transforms Complete', size: '3.5 MB' }],
+                        notes: [{ title: 'Laplace Formulas Sheet', desc: 'Properties, shifts, and inverse guides' }],
+                        youtube: [
+                            { title: 'Laplace Transform Complete Series', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/nmp-5tSp-UY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Vector Calculus',
+                        aiSummary: 'Gradient, divergence, curl, line/surface/volume integrals, Green\'s, Gauss divergence, and Stokes\' theorems.',
+                        ppts: [{ title: 'Vector Calculus Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Vector Theorems Solved PYQs', desc: 'Stokes, Gauss, and Green proofs' }],
+                        youtube: [
+                            { title: 'Vector Calculus Revision', channel: 'Dr. Gajendra Purohit', url: 'https://youtu.be/IwgqKjA6wko' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Aptitude-II',
+                        aiSummary: 'Aptitude topics: Partnership, problems on ages, mixtures, direction sense, blood relations, and interest.',
+                        ppts: [{ title: 'Aptitude-II PDF', size: '1.8 MB' }],
+                        notes: [{ title: 'Aptitude Hacks & Shortcuts', desc: 'Ages, partnership & direction tricks' }],
+                        youtube: [
+                            { title: 'Aptitude Practice Playlist', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=TCPPvRfHtXw' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'ee-network-1', key: 'pse', title: 'Network Theory', code: 'KEE201',
+                id: 'design-1', key: 'default', title: 'Design Thinking-I', code: 'ACSE0203',
                 units: [
-                    { title: 'Unit 1: AC Circuit Analysis', aiSummary: 'Phasors, impedance, resonance, power factor. Series and parallel RLC circuits. Power in AC circuits: active, reactive, apparent.', ppts: [{ title: 'Network Theory', size: '3.2 MB' }], notes: [{ title: 'AC Circuit Notes', desc: 'Phasor and power analysis' }], youtube: [{ title: 'Network Theory', channel: 'Neso Academy', url: 'https://youtube.com' }] }
+                    {
+                        title: 'Unit 1: Introduction',
+                        aiSummary: 'Basics of design thinking, iterative cycle, empathy mapping, user-centered mindset, and case studies.',
+                        ppts: [{ title: 'Design Thinking Intro', size: '1.8 MB' }],
+                        notes: [{ title: 'Design Cycle Summary', desc: 'Empathize, Define, Ideate, Prototype, Test' }],
+                        youtube: [
+                            { title: 'Design Thinking for Beginners', channel: 'NPTEL', url: 'https://swayam.gov.in/nd1_noc19_mg60/preview' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Ethical Values and Empathy',
+                        aiSummary: 'Role of empathy in user research, ethical guidelines, interviews, observation, and developing user personas.',
+                        ppts: [{ title: 'Empathy & Ethics Slides', size: '2.0 MB' }],
+                        notes: [{ title: 'User Research Guidelines', desc: 'Interview scripts & observation logs' }],
+                        youtube: [
+                            { title: 'Empathy Mapping Techniques', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Problem Statement & Ideation',
+                        aiSummary: 'Defining the problem, POV statement, brainstorming techniques, SCAMPER method, and selecting solutions.',
+                        ppts: [{ title: 'Problem Definition & Ideation', size: '2.4 MB' }],
+                        notes: [{ title: 'Brainstorming Guidelines', desc: 'POV definitions & ideation rules' }],
+                        youtube: [
+                            { title: 'Ideation & Prototyping Basics', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=bwRjC_SRQAI' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Critical Thinking',
+                        aiSummary: 'Critical thinking fundamentals, evaluating arguments, identifying logical fallacies, and decision models.',
+                        ppts: [{ title: 'Critical Thinking Slides', size: '1.6 MB' }],
+                        notes: [{ title: 'Logical Fallacies Cheat Sheet', desc: 'Types of fallacies with examples' }],
+                        youtube: [
+                            { title: 'Critical Thinking & Fallacies', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=uFoc13aUa5w' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Logic and Argumentation',
+                        aiSummary: 'Propositional logic, syllogisms, forming valid arguments, and group exercises in structural debate.',
+                        ppts: [{ title: 'Logic & Arguments PPT', size: '2.2 MB' }],
+                        notes: [{ title: 'Deductive vs Inductive Logic', desc: 'Valid argument forms cheatsheet' }],
+                        youtube: [
+                            { title: 'Formal Logic & Syllogisms', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=RFDu9oVAE-g' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'physics-1', key: 'physics', title: 'Engineering Physics', code: 'AAS0201A',
+                units: [
+                    {
+                        title: 'Unit 1: Relativistic Mechanics',
+                        aiSummary: 'Frame of reference, Michelson-Morley experiment, Galilean transformations, Lorentz transformations, length contraction, time dilation, and E=mc^2.',
+                        ppts: [{ title: 'Relativity Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Relativistic Derivations', desc: 'Time dilation & mass-energy relation proofs' }],
+                        youtube: [
+                            { title: 'Relativity Complete Lecture', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Quantum Mechanics',
+                        aiSummary: 'De-Broglie hypothesis, wave-particle duality, Heisenberg uncertainty principle. Schrodinger wave equation (time-dependent and time-independent), wave function physical significance, particle in a 1D box. Practice energy level derivations.',
+                        ppts: [{ title: 'Quantum Mechanics Slides', size: '4.0 MB' }],
+                        notes: [{ title: 'Quantum Physics Formula Guide', desc: 'Solved 1D box derivations' }],
+                        youtube: [
+                            { title: 'Quantum Mechanics Playlist', channel: 'NPTEL', url: 'https://www.youtube.com/watch?v=0kFp63cK8uE' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Wave Optics',
+                        aiSummary: 'Interference: Young\'s double-slit experiment, Newton\'s rings, thin film interference. Diffraction: Fresnel vs Fraunhofer, single slit diffraction pattern. Polarization: Brewster\'s law, Malus law, double refraction. Key formulas: fringe width = λD/d, resolving power of grating = nN.',
+                        ppts: [{ title: 'Wave Optics Lecture', size: '2.1 MB' }],
+                        notes: [{ title: 'Optics Quick Notes', desc: 'Derivations and numericals' }],
+                        youtube: [
+                            { title: 'Wave Optics Complete', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=6OUEfkGCJpY' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: Semiconductor Physics and Information Storage',
+                        aiSummary: 'Energy bands, intrinsic & extrinsic semiconductors, Fermi level, carrier concentration, Hall effect, and basic magnetic memory storage systems.',
+                        ppts: [{ title: 'Semiconductor Devices PPT', size: '2.8 MB' }],
+                        notes: [{ title: 'Carrier Concentration & Fermi Level', desc: 'Equations and Hall effect calculations' }],
+                        youtube: [
+                            { title: 'Semiconductors in Physics', channel: 'Gate Smashers', url: 'https://www.youtube.com/watch?v=h6sXoB2eIig' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Fiber Optics & Laser',
+                        aiSummary: 'Laser: Spontaneous and stimulated emission, Einstein\'s coefficients, population inversion, Ruby laser, He-Ne laser. Fiber Optics: Principle of propagation, acceptance angle, numerical aperture, fractional refractive index change, single/multi-mode fibers. Tip: Numerical questions are highly common from numerical aperture.',
+                        ppts: [{ title: 'Lasers & Fiber Optics PPT', size: '2.9 MB' }],
+                        notes: [{ title: 'Fiber Optics Cheat Sheet', desc: 'Formulas and step-by-step solved numerics' }],
+                        youtube: [
+                            { title: 'Lasers & Fiber Optics course', channel: 'Physics Wallah', url: 'https://www.youtube.com/watch?v=u8-FidK7zV8' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'python-2', key: 'java', title: 'Problem Solving using Advanced Python', code: 'ACSE0202',
+                units: [
+                    {
+                        title: 'Unit 1: Classes and Objects',
+                        aiSummary: 'OOP fundamentals in Python: defining classes, instantiating objects, constructor methods (__init__), class vs instance attributes, and method types.',
+                        ppts: [{ title: 'Classes & Objects Slides', size: '2.3 MB' }],
+                        notes: [{ title: 'Python OOP Cheatsheet', desc: 'Syntax for classes, objects, and attributes' }],
+                        youtube: [
+                            { title: 'Python Classes and Objects', channel: 'Telusko', url: 'https://nptel.ac.in/courses/106/106/106106145/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 2: Object Oriented Concepts',
+                        aiSummary: 'Inheritance, method overriding, super() function, polymorphism, encapsulation, private attributes, operator overloading, and special methods (__str__, __len__).',
+                        ppts: [{ title: 'OOP Core Concepts', size: '2.7 MB' }],
+                        notes: [{ title: 'Polymorphism & Inheritance', desc: 'Overriding and multiple inheritance rules' }],
+                        youtube: [
+                            { title: 'Python OOP Inheritance', channel: 'Python Course', url: 'https://www.python-course.eu/python3_inheritance.php' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 3: Functional Programming',
+                        aiSummary: 'Functional concepts in Python: map(), filter(), reduce() functions, list/dictionary comprehensions, generators, and iterators.',
+                        ppts: [{ title: 'Functional Programming PPT', size: '2.1 MB' }],
+                        notes: [{ title: 'Functional Python Cheatsheet', desc: 'Lambda, mapping, and list comprehension tips' }],
+                        youtube: [
+                            { title: 'Functional Python Programming', channel: 'Real Python', url: 'https://realpython.com/courses/functional-programming-python/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 4: GUI Programming',
+                        aiSummary: 'GUI development in Python using Tkinter: creating windows, widgets (Labels, Buttons, Entries), layouts (Pack, Grid), and event handling.',
+                        ppts: [{ title: 'Tkinter GUI Slides', size: '3.1 MB' }],
+                        notes: [{ title: 'Tkinter Widgets Reference', desc: 'GUI element grids and event bindings' }],
+                        youtube: [
+                            { title: 'Python Tkinter GUI Tutorial', channel: 'Real Python', url: 'https://realpython.com/python-gui-tkinter/' }
+                        ]
+                    },
+                    {
+                        title: 'Unit 5: Libraries in Python',
+                        aiSummary: 'Intro to NumPy, Pandas, and Matplotlib libraries for data manipulation and visualization.',
+                        ppts: [{ title: 'Python Libraries PPT', size: '3.8 MB' }],
+                        notes: [{ title: 'Data Analytics Cheatsheet', desc: 'Numpy arrays and Pandas dataframe basics' }],
+                        youtube: [
+                            { title: 'NumPy, Pandas & Matplotlib Course', channel: 'NPTEL', url: 'https://nptel.ac.in/courses/106/107/106107220/' }
+                        ]
+                    }
                 ]
             }
         ],
